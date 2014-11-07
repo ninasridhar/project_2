@@ -8,6 +8,12 @@ gem 'rails', '3.2.19'
 gem 'pg'
 gem 'haml-rails'
 gem 'devise'
+group :test do
+  gem 'rspec-rails', "~> 2.14.2"
+  gem 'database_cleaner'
+  gem 'shoulda'
+  gem 'capybara'
+end
 
 
 # Gems used only for assets and not required
