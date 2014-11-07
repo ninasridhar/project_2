@@ -41,15 +41,15 @@ l4 = Location.create(city: 'Paris', contry: 'France')
 
 l5 = Location.create(city: 'Barcelona', contry: 'Spain')
 
-c1 = Category.create(:name 'Architecture')
+c1 = Category.create(name: 'Architecture')
 
-c2 = Category.create(:name 'Food')
+c2 = Category.create(name: 'Food')
 
-c3 = Category.create(:name 'Tech')
+c3 = Category.create(name: 'Tech')
 
-c4 = Category.create(:name 'Nature')
+c4 = Category.create(name: 'Nature')
 
-c5 = Category.create(:name 'Fashion')
+c5 = Category.create(name: 'Fashion')
 
 
 
