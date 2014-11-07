@@ -2,7 +2,7 @@ Project2::Application.routes.draw do
   resources :subscriptions
 
 
-  devise_for :users
+  devise_for :users, path_names: {sign_in: "login", sign_out: "logout", registration: "register", sign_up: "sign_up"}
 
   resources :votes
 
