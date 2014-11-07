@@ -3,10 +3,12 @@ class CreatePhotos < ActiveRecord::Migration
     create_table :photos do |t|
       t.string :name
       t.text :description
+      t.text :photo
       t.integer :user_id
       t.integer :album_id
       t.integer :location_id
       t.integer :category_id
+      t.text :photo_link
 
       t.timestamps
     end

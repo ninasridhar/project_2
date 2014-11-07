@@ -50,10 +50,12 @@ ActiveRecord::Schema.define(:version => 20141107143128) do
   create_table "photos", :force => true do |t|
     t.string   "name"
     t.text     "description"
+    t.text     "photo"
     t.integer  "user_id"
     t.integer  "album_id"
     t.integer  "location_id"
     t.integer  "category_id"
+    t.text     "photo_link"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
