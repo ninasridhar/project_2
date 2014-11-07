@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @comment.user_id
+%p
+  %b Multi:
+  = @comment.multi_id
+%p
+  %b Multi type:
+  = @comment.multi_type
+
+= link_to 'Edit', edit_comment_path(@comment)
+\|
+= link_to 'Back', comments_path

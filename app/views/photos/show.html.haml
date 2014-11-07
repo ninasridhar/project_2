@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @photo.name
+%p
+  %b Description:
+  = @photo.description
+%p
+  %b User:
+  = @photo.user_id
+%p
+  %b Album:
+  = @photo.album_id
+%p
+  %b Location:
+  = @photo.location_id
+%p
+  %b Category:
+  = @photo.category_id
+
+= link_to 'Edit', edit_photo_path(@photo)
+\|
+= link_to 'Back', photos_path
