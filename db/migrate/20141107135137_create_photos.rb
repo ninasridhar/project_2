@@ -8,6 +8,7 @@ class CreatePhotos < ActiveRecord::Migration
       t.integer :album_id
       t.integer :location_id
       t.integer :category_id
+      t.text :photo_link
 
       t.timestamps
     end
