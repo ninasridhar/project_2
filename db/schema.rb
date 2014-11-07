@@ -21,6 +21,11 @@ ActiveRecord::Schema.define(:version => 20141107143128) do
     t.datetime "updated_at",  :null => false
   end
 
+  create_table "albums_photos", :id => false, :force => true do |t|
+    t.integer "album_id"
+    t.integer "photo_id"
+  end
+
   create_table "categories", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
@@ -53,6 +58,11 @@ ActiveRecord::Schema.define(:version => 20141107143128) do
     t.text     "photo_link"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "photos_tags", :id => false, :force => true do |t|
+    t.integer "photo_id"
+    t.integer "tag_id"
   end
 
   create_table "subscriptions", :force => true do |t|
