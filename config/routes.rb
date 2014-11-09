@@ -6,25 +6,37 @@ Project2::Application.routes.draw do
 
   resources :votes
 
-
   resources :comments
 
 
-  resources :categories
+  resources :categories do
+    collection { post :search, to: 'categories#search' }
+  end
 
 
-  resources :locations
+  resources :locations do 
+    collection { post :search, to: 'locations#search' }
+  end
 
 
-  resources :tags
+  resources :tags do
+    collection { post :search, to: 'tags#search' }
+  end
 
 
-  resources :albums
+  resources :albums do 
+    collection { post :search, to: 'albums#search' }
+  end
 
+  resources :photos do
+    collection { post :search, to: 'photos#search' }
+  end
 
-  resources :photos
+  resources :users do
+    collection { post :search, to: 'users#search' }
+  end
 
-  resources :users
+  get '/search', to: "search#index"
 
 
   # The priority is based upon order of creation:
