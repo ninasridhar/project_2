@@ -5,6 +5,9 @@
     %br
       = @user.name
   %p
+    %br
+      = image_tag(@user.profile_pic, class: 'profile_pic')
+  %p
     %b Username:
     %br
       = @user.username
