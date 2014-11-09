@@ -1,0 +1,14 @@
+.middle
+  %h2 Users
+  %p
+    - @users.each do |user|
+      - if user.id != 1
+        %br
+        %br
+        = user.name
+        %br
+        = user.username
+        %br
+        = user.hometown
+    %br
+    %br
