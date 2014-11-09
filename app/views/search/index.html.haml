@@ -4,32 +4,32 @@
   - @users.each do |user|
     = link_to(user.name, user_path(user))
  
- 
-- if @tags.present?
+- elsif @tags.present?
   %h1 Search results 
 
   - @tags.each do |tag|
     = link_to(tag.name, tag_path(tag))
    
-
-- if @categories.present?
+- elsif @categories.present?
   %h1 Search results 
 
   - @categories.each do |category|
     = link_to(category.name, category_path(category))
-    
 
-- if @albums.present?
+- elsif @albums.present?
   %h1 Search results 
 
   - @albums.each do |album|
     = link_to(album.name, album_path(album))
 
-- if @photos.present?
+- elsif @photos.present?
   %h1 Search results 
 
   - @photos.each do |photo|
     = link_to(photo.name, photo_path(photo))
+
+- else 
+  %h1 Nothing matches what you searched for, please try again
 
 / - if @locations.present?
 /   %h1 Search results 
