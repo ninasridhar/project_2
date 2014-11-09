@@ -33,6 +33,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       # added columns
       t.string :name
       t.string :username
+      t.text :profile_pic
       t.text :bio
       t.string :hometown
 
