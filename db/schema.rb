@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141107143128) do
+ActiveRecord::Schema.define(:version => 20141109161213) do
 
   create_table "albums", :force => true do |t|
     t.string   "name"
@@ -56,8 +56,10 @@ ActiveRecord::Schema.define(:version => 20141107143128) do
     t.integer  "location_id"
     t.integer  "category_id"
     t.text     "photo_link"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.string   "upload_image"
+    t.string   "uploaded_image"
   end
 
   create_table "photos_tags", :id => false, :force => true do |t|
