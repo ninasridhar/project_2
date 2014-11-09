@@ -1,4 +1,22 @@
+body{
+	margin: 0;
+}
+
+header{
+	background: black;
+	color: white;
+	height: 50px;
+	margin: 0px;
+
+	padding: 3px
+}
+
+
 img {
   width: 800px;
   border: 1px solid #6B1229;
+}
+
+.icon{
+	width:40px;
 }
