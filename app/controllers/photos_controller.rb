@@ -13,10 +13,10 @@ class PhotosController < ApplicationController
   # GET /photos/1.json
   def show
     @photo = Photo.find(params[:id])
-
+    @votes  = @photo.votes_counter
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @photo }
+      format.json { render json: @votes }
     end
   end
 

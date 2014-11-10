@@ -10,16 +10,21 @@ u5 = User.create!(email: 'test5@testmail.com', password: '12345678', name: 'Frie
 
 u6 = User.create!(email: 'test6@testmail.com', password: '12345678', name: 'Bastian Schweinsteiger', username: 'football_guy_7', bio: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', hometown: 'Munich')
 
-p1 = Photo.create(name: 'London', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', user_id: 1, album_id: 1, location_id: 1, category_id: 1)
+p1 = Photo.create(name: 'London', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', user_id: 1, location_id: 1, category_id: 1)
 
-p2 = Photo.create(name: 'Flower IV', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', user_id: 2, album_id: 2, location_id: 2, category_id: 2)
+p2 = Photo.create(name: 'Flower IV', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', user_id: 2, location_id: 2, category_id: 2)
 
-p3 = Photo.create(name: 'San Francisco', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', user_id: 3, album_id: 3, location_id: 3, category_id: 3)
+p3 = Photo.create(name: 'San Francisco', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', user_id: 3, location_id: 3, category_id: 3)
 
-p4 = Photo.create(name: 'Automn Tree', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', user_id: 4, album_id: 4, location_id: 4, category_id: 4)
+p4 = Photo.create(name: 'Automn Tree', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', user_id: 4, location_id: 4, category_id: 4)
 
-p5 = Photo.create(name: 'Oscar the blue elephant', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', user_id: 5, album_id: 5, location_id: 5, category_id: 5)
+p5 = Photo.create(name: 'Oscar the blue elephant', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', user_id: 5, location_id: 5, category_id: 5)
 
+v1 = Vote.create(photo_id: 1, number_of_votes: 0)
+v2 = Vote.create(photo_id: 2, number_of_votes: 3)
+v3 = Vote.create(photo_id: 3, number_of_votes: -12)
+v4 = Vote.create(photo_id: 4, number_of_votes: 2)
+v5 = Vote.create(photo_id: 5, number_of_votes: -1)
 
 a1 = Album.create(name:'Animals In The Zoo', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', user_id: 1)
 
@@ -51,5 +56,17 @@ c4 = Category.create(name: 'Nature')
 
 c5 = Category.create(name: 'Fashion')
 
+
+p1.albums  = [a1]
+p2.albums  = [a2]
+p3.albums  = [a3]
+p4.albums  = [a4]
+p5.albums  = [a5]
+
+# p1.votes  = [v1]
+# p2.votes  = [v2]
+# p3.votes  = [v3]
+# p4.votes  = [v4]
+# p5.votes  = [v5]
 
 

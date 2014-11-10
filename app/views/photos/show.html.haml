@@ -1,28 +1,41 @@
 %p#notice= notice
 
 %p
+  = image_tag @photo.uploaded_image.url, class: "photo-show", id: 'votes'
+.votes
+  - if @photo.votes[0].number_of_votes >= 0
+    .positive
+      = @photo.votes[0].number_of_votes
+  - else
+    .negative
+      = @photo.votes[0].number_of_votes
+  / = link_to new_vote_path do
+  %i.glyphicon.glyphicon-thumbs-up#up{data: { vote: 1}}
+  %i.glyphicon.glyphicon-thumbs-down#down{data: { vote: -1}}
+   
+
+%p
   %b Name:
   = @photo.name
 %p
   %b Description:
   = @photo.description
 %p
-  %b User:
-  = @photo.user_id
+  %b Taken By:
+  = @photo.user.name
+%p 
+  %b Added On:
+  = @photo.created_at
 %p
-  %b Album:
-  = @photo.album_id
+  %b Albums:
+  - @photo.albums.each do |album|
+    = album.name
 %p
   %b Location:
-  = @photo.location_id
+  = @photo.location.city
 %p
   %b Category:
-  = @photo.category_id
-
-%p
-  %b Image:
-  = image_tag @photo.uploaded_image.url
-
+  = @photo.category.name
 
 
 = link_to 'Edit', edit_photo_path(@photo)

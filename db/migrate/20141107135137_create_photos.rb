@@ -5,7 +5,7 @@ class CreatePhotos < ActiveRecord::Migration
       t.text :description
       t.text :photo
       t.integer :user_id
-      t.integer :album_id
+      # t.integer :album_id
       t.integer :location_id
       t.integer :category_id
       t.text :photo_link

@@ -1,6 +1,6 @@
 class Photo < ActiveRecord::Base
 
-  attr_accessible :album_id, :category_id, :description, :location_id, :name, :user_id, :album_id, :location_id, :category_id, :photo_link, :uploaded_image
+  attr_accessible :album_id, :category_id, :description, :location_id, :name, :user_id, :album_id, :location_id, :category_id, :photo_link, :uploaded_image, :votes
 
 
   has_many :votes
@@ -15,4 +15,14 @@ class Photo < ActiveRecord::Base
   mount_uploader :uploaded_image, ImageUploaderUploader
 
   validates :name, presence: true, on: :create
+
+  def votes_counter
+    @votes = 0
+    self.votes.each do |vote|
+      # vote.each do |v|
+        @votes += vote.number_of_votes
+    end 
+    @votes  
+  end
+
 end

@@ -52,12 +52,12 @@ ActiveRecord::Schema.define(:version => 20141110112656) do
     t.text     "description"
     t.text     "photo"
     t.integer  "user_id"
-    t.integer  "album_id"
     t.integer  "location_id"
     t.integer  "category_id"
     t.text     "photo_link"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.string   "upload_image"
     t.string   "uploaded_image"
   end
 
