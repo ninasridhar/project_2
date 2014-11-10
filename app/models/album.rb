@@ -4,4 +4,6 @@ class Album < ActiveRecord::Base
   has_and_belongs_to_many :photos
   has_many :comments, :as => :multi
   belongs_to :user
+
+  validates :name, presence: true, on: :create
 end

@@ -1,39 +1,34 @@
+%h1 Search results
+
 - if @users.present?
-  %h1 Search results 
 
   - @users.each do |user|
     = link_to(user.name, user_path(user))
  
 - elsif @tags.present?
-  %h1 Search results 
 
   - @tags.each do |tag|
     = link_to(tag.name, tag_path(tag))
    
 - elsif @categories.present?
-  %h1 Search results 
 
   - @categories.each do |category|
     = link_to(category.name, category_path(category))
 
 - elsif @albums.present?
-  %h1 Search results 
 
   - @albums.each do |album|
     = link_to(album.name, album_path(album))
 
 - elsif @photos.present?
-  %h1 Search results 
 
   - @photos.each do |photo|
     = link_to(photo.name, photo_path(photo))
 
+- elsif @locations.present?
+
+  - @locations.each do |location|
+    = link_to(location.city, location_path(location)) 
+
 - else 
   %h1 Nothing matches what you searched for, please try again
-
-/ - if @locations.present?
-/   %h1 Search results 
-
-/   - @locations.each do |location|
-/     = link_to(location.city, location_path(location))
- 
