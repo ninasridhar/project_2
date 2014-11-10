@@ -28,7 +28,8 @@ header h1{
 }
 
 article{
-	margin-left: 3%
+	margin-left: 3%;
+	margin-right: 3%;
 }
 
 .search {
@@ -111,4 +112,25 @@ button{
 
 .lupe{
 	width: 30px
+}
+
+a{
+	color: white;
+}
+
+.boxI{
+	float: left;
+	width: 31.3%;
+	height: auto;
+}
+
+
+.boxI img{
+	width: 100%
+}
+
+.userimage{
+	width: 35%;
+	float: left;
+	border-radius: 100%
 }

@@ -25,7 +25,7 @@ group :development do
 end
 
 gem 'carrierwave', '0.9.0'
-gem 'rmagick'
+gem 'rmagick', :require => 'RMagick'
 gem 'ransack'
 gem 'cancancan', '~> 1.9'
 gem 'bourbon'

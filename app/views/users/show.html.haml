@@ -1,13 +1,12 @@
-%div.user_info
+= image_tag @user.user_image.url, :class => "userimage"
+
+.user_info
   %p
     %h1 
       = @user.name
       (
       = @user.username
       )
-  /%p
-  /  %br
-  /    = image_tag(@user.profile_pic, class: 'profile_pic')
   %p
     %b About Me:
     = @user.bio

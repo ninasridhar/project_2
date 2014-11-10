@@ -1,4 +1,5 @@
 class AlbumsController < ApplicationController
+  
   # GET /albums
   # GET /albums.json
   def index
