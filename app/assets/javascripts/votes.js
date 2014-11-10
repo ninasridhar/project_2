@@ -8,6 +8,12 @@ railsAjax.getVotes = function(photoId){
     dataType: "json"
   }).success(function(data){
     $('.no_votes').html('')
+    $('.no_votes').append(data)
+    // if data >= 0 {
+    //   $('.no_votes').addClass('positive');
+    // } else {
+    //   $('.no_votes').addClass('negative');
+    // }
   })
 }
 
