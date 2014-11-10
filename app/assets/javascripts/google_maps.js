@@ -3,18 +3,33 @@ mapApp = {};
 
 mapApp.initialize = function(){
   canvas = document.getElementById('map_canvas');
-  var latLng = new google.maps.LatLng(51.508742, -0.120850)
-  // geocoder = new google.maps.Geocoder();
   mapOptions = {
     zoom: 8,
-    center:latLng,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(canvas, mapOptions);
 }
 
-// mapApp.codeAddress = function(){
-//   var Address = document.getElementById('city').value;
-// }
+mapApp.codeAddress = function(){
+  geocoder = new google.maps.Geocoder();
+  var Address = document.getElementById('hometown').value;
+  geocoder.geocode( { 'address': Address}, function(results, status) {
+    map.setCenter(results[0].geometry.location);
 
-$(mapApp.initialize);
+  
+  })
+}
+
+// if (status == google.maps.GeocoderStatus.OK) { 
+//   map.setCenter(results[0].geometry.location);
+//   var marker = new google.maps.Marker({
+//     map: map,
+//     position: results[0].geometry.location
+//   })
+// } else{ 
+//   alert("Geocode was not successful for the following reason: " + status);
+// }
+$(function(){
+  $(mapApp.initialize);
+  $(mapApp.codeAddress);
+})
