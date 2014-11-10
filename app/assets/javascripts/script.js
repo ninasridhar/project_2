@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $(".letitappear").click(function () {
+    $(".lupe").click(function () {
+    	console.log('YO!')
     	$(".nav").toggle("fast");
         $(".searchbox").slideToggle("fast");
     });
