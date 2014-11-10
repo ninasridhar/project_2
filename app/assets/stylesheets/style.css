@@ -132,5 +132,11 @@ a{
 .userimage{
 	width: 35%;
 	float: left;
-	border-radius: 100%
+	border-radius: 100%;
+	margin-left: 2%
+}
+
+.navr img{
+	width: 70px;
+	margin-top: -20px;
 }
