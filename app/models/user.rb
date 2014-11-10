@@ -6,11 +6,11 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :username, :bio, :hometown
-  # attr_accessible :title, :body
+    # attr_accessible :title, :body
 
-  has_many :albums
-  has_many :photos
-  has_many :votes
-  has_many :subscriptions, foreign_key: :user1_id
-  has_many :users, through: :subscriptions, source: :user2
+    has_many :albums
+    has_many :photos
+    has_many :votes
+    has_many :subscriptions, foreign_key: :user1_id
+    has_many :users, through: :subscriptions, source: :user2
 end
