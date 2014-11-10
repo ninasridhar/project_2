@@ -7,7 +7,7 @@ railsAjax.getVotes = function(photoId){
     type: 'GET',
     dataType: "json"
   }).success(function(data){
-    console.log(data);
+    $('.no_votes').html('')
   })
 }
 

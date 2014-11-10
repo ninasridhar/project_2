@@ -3,12 +3,13 @@
 %p
   = image_tag @photo.uploaded_image.url, class: "photo-show", id: 'votes'
 .votes
-  - if @photo.votes[0].number_of_votes >= 0
-    .positive
-      = @photo.votes[0].number_of_votes
-  - else
-    .negative
-      = @photo.votes[0].number_of_votes
+  .no_votes
+    - if @votes >= 0
+      .positive
+        = @votes
+    - else
+      .negative
+        = @votes
   / = link_to new_vote_path do
   %i.glyphicon.glyphicon-thumbs-up#up{data: { vote: 1}}
   %i.glyphicon.glyphicon-thumbs-down#down{data: { vote: -1}}
