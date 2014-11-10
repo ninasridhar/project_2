@@ -8,6 +8,8 @@
     %br/
 
 #map_canvas
+
+%input#hometown{type: "hidden", value: "#{current_user.hometown}"}
 %br/
 
 = link_to 'New Location', new_location_path
