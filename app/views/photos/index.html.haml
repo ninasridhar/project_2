@@ -1,21 +1,5 @@
 %h1 Listing photos
-
 - @photos.each do |p|
-  %div.categorybox
-    = p.name
-    %br
-    = p.user_id
-    %br
-    /= image_tag, p.uploaded_image
-    %br
-    = link_to 'Show', p
-    %br
-    = link_to 'Edit', edit_category_path(p)
-    %br
-    = link_to 'Destroy', p, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-
-
-%br
-
-= link_to 'New Photo', new_photo_path
+  %div.boxI
+    = link_to p do
+      =image_tag p.uploaded_image.thumb

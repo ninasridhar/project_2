@@ -24,10 +24,9 @@
   .field
     = f.label :category_id
     = f.number_field :category_id
-  .actions
-    = f.submit 'Save'
-
-  %div.field
+  .field
     = f.label :uploaded_image
     = f.file_field :uploaded_image
+  .actions
+    = f.submit 'Save'
 
