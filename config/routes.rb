@@ -1,8 +1,7 @@
 Project2::Application.routes.draw do
-  resources :subscriptions
-
-
   devise_for :users
+
+  resources :subscriptions
 
 
   resources :votes
