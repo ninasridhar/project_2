@@ -20,10 +20,10 @@
     %b Albums:
     - @user.albums.each do |album|
       = album.name
-  %p
-    %b Photos:
-    %br
-      - @user.photos.each do |photo|
-        = photo.name
-        = image_tag(photo.photo)
-    %p= link_to 'Edit Profile', edit_user_registration_path
+  / %p
+  /   %b Photos:
+  /   %br
+  /     - @user.photos.each do |photo|
+  /       = photo.name
+  /       = image_tag(photo.photo)
+  %p= link_to 'Edit Profile', edit_user_registration_path
