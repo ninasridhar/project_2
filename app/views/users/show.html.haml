@@ -27,4 +27,4 @@
       - @user.photos.each do |photo|
         = photo.name
         = image_tag(photo.photo)
-  %p= link_to 'Edit Profile', edit_user_registration_path(@user)
+    %p= link_to 'Edit Profile', edit_user_registration_path
