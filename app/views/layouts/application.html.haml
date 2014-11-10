@@ -17,6 +17,7 @@
         =link_to 'Albums', albums_path, :class => "nav"
         =link_to 'Photos', photos_path, :class => "nav"
         =link_to 'Categories', categories_path, :class => "nav"
+        =link_to 'Upload', new_photo_path, :class => "nav"
         .searchbar
           %form{action: "/search", method: :get, :class => "searchbox"}
             %input{name: "q", type: "text", placeholder: "What are you looking for?", :class => "searchbox"}

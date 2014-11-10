@@ -128,3 +128,9 @@ a{
 .boxI img{
 	width: 100%
 }
+
+.userimage{
+	width: 35%;
+	float: left;
+	border-radius: 100%
+}
