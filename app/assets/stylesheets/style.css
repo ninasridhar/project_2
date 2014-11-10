@@ -126,7 +126,21 @@ a{
 
 
 .boxI img{
-	width: 100%
+	width: 100%;
+	-webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.boxI img:hover{
+	filter: grayscale(30%);
+	-webkit-filter: grayscale(30%);
+	-moz-filter: grayscale(30%);
+	filter: grayscale(30%);
+	filter: gray;
+	-webkit-filter: grayscale(1);
 }
 
 .userimage{
@@ -140,3 +154,4 @@ a{
 	width: 70px;
 	margin-top: -20px;
 }
+
