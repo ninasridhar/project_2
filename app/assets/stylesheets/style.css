@@ -140,7 +140,7 @@ a{
 	-moz-filter: grayscale(30%);
 	filter: grayscale(30%);
 	filter: gray;
-	-webkit-filter: grayscale(1);
+	-webkit-filter: grayscale(.5);
 
 }
 
@@ -167,6 +167,20 @@ ul img{
 	width: 20%;
 	float: none;
 	margin-right: -0.5%
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+ul img:hover{
+	filter: grayscale(30%);
+	-webkit-filter: grayscale(30%);
+	-moz-filter: grayscale(30%);
+	filter: grayscale(30%);
+	filter: gray;
+	-webkit-filter: grayscale(.5);
 }
 
 ul li{
