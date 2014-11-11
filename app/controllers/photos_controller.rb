@@ -14,6 +14,8 @@ class PhotosController < ApplicationController
   def show
     @photo = Photo.find(params[:id])
     @votes  = @photo.votes_counter
+    @voted_already = @photo.who_voted(current_user)
+    # @current_user = current_user if current_user
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @votes }

@@ -21,6 +21,13 @@
       %b Albums:
       - @user.albums.each do |album|
         = album.name
+
+.maxwidth
+ 
+  - if @user.photos != []
+    - @user.photos.each do |photo|
+      = link_to photo do
+        = image_tag photo.uploaded_image.thumb, class: "box2"
   / %p
   /   %b Photos:
   /   %br

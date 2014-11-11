@@ -20,15 +20,17 @@ railsAjax.getVotes = function(photoId){
 railsAjax.Vote = function(){
   // event.preventDefault();
   var photoId = parseInt(window.location.href.split('/').pop())
+  var user  = parseInt($('#user').data("value"));
   var $this = $(this);
   railsAjax.getVotes();
   $.ajax({
     url: '/votes',
     method: 'POST',
-    data: {vote: {photo_id: photoId, number_of_votes: $this.data("vote")}},
+    data: {vote: {photo_id: photoId, number_of_votes: $this.data("vote"), user_id: user}},
     dataType: 'json'
   }).success(function(data){
     console.log(data);
+    $('.thumbs').html('');
     railsAjax.getVotes(photoId);
   })
 }
