@@ -3,7 +3,7 @@ railsAjax = {};
 
 railsAjax.getVotes = function(photoId){
   $.ajax({
-    url: '/photos/' + 6,
+    url: '/photos/' + photoId,
     type: 'GET',
     dataType: "json"
   }).success(function(data){
