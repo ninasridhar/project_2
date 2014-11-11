@@ -10,15 +10,36 @@ u5 = User.create!(email: 'test5@testmail.com', password: '12345678', name: 'Frie
 
 u6 = User.create!(email: 'test6@testmail.com', password: '12345678', name: 'Bastian Schweinsteiger', username: 'football_guy_7', bio: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', hometown: 'Munich')
 
-p1 = Photo.create(name: 'London', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', user_id: 1, location_id: 1, category_id: 1)
+u7 = User.create!(email: 'jacob.schoo@gmail.com', password: '12345678', name: 'Jacob Schoo', username: 'jacobbomb', bio: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', hometown: 'Hamburg')
 
-p2 = Photo.create(name: 'Flower IV', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', user_id: 2, location_id: 2, category_id: 2)
+p1 = Photo.create(name: 'London', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/food.jpg')), user_id: 1, location: 'London', category_id: 1)
 
-p3 = Photo.create(name: 'San Francisco', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', user_id: 3, location_id: 3, category_id: 3)
+p2 = Photo.create(name: 'Flower IV', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/5nu8db.jpg')), user_id: 2, location: 'Berlin', category_id: 2)
 
-p4 = Photo.create(name: 'Automn Tree', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', user_id: 4, location_id: 4, category_id: 4)
+p3 = Photo.create(name: 'San Francisco', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/Chrysanthemum.jpeg')), user_id: 3, location: 'Mumbai', category_id: 3)
 
-p5 = Photo.create(name: 'Oscar the blue elephant', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', user_id: 5, location_id: 5, category_id: 5)
+p4 = Photo.create(name: 'Automn Tree', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/cool-architecture-design-9675-hd-wallpapers.jpg')), user_id: 4, location: 'Paris', category_id: 4)
+
+p5 = Photo.create(name: 'Oscar the blue elephant', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/fairytail_falls.jpg')), user_id: 5, location: 'Moscow', category_id: 5)
+
+p6 = Photo.create(name: 'Art stuff', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/food-art-1-2gzoh3o.jpg')), user_id: 6, location: 'Barcelona', category_id: 1)
+
+p7 = Photo.create(name: 'Ocean', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/fotograf-hochzeit_hpv.jpg')), user_id: 7, location: 'Sydney', category_id: 2)
+
+p8 = Photo.create(name: 'Deep Blue', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/golden_light_palouse.jpg')), user_id: 2, location: 'Hong Kong', category_id: 4)
+
+p9 = Photo.create(name: 'Lamps', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lw.jpg')), user_id: 3, location: 'Manchester', category_id: 4)
+
+p10 = Photo.create(name: 'Facebook', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/media.facebook.efe5f8ef-9894-43d9-8521-dbc0bcc79313.normalized.jpg')), user_id: 5, location: 'Lisbon', category_id: 5)
+
+p11 = Photo.create(name: 'Ladybird', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/natur.png')), user_id: 4, location: 'Cape Town', category_id: 3)
+
+p12 = Photo.create(name: 'Big Apple', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/nyc-2.jpg')), user_id: 7, location: 'Dublin', category_id: 3)
+
+p13 = Photo.create(name: 'Summer', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/titel-natur.jpg')), user_id: 2, location: 'Monaco', category_id: 3)
+
+p14 = Photo.create(name: 'Rails', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/week-50-Form4-Architecture-2.jpg')), user_id: 5, location: 'Amsterdam', category_id: 3)
+
 
 v1 = Vote.create(photo_id: 1, number_of_votes: 0)
 v2 = Vote.create(photo_id: 2, number_of_votes: 3)
