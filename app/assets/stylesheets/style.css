@@ -319,3 +319,11 @@ p a:hover{
 .drawers li h5:hover{
 	color: red
 }
+
+.albumsswitch{
+	visibility: hidden
+}
+
+.imagesswitch{
+	visibility: visible;
+}

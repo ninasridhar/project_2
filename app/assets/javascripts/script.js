@@ -1,14 +1,15 @@
 $(document).ready(function(){
-    $(".buttonsmall").click(function () {
-    	console.log('YO!')
-    	$(".nav").toggle("fast");
-        $(".buttonsmall").slideToggle("fast");
-    });
 
     $(".lupe").click(function () {
     	console.log('YO!')
     	$(".nav").toggle("slow");
         $(".searchbox").slideToggle("fast");
+    });
+
+    $(".albumbutton").click(function () {
+        console.log('YO!')
+        $(".albumsswitch").toggle("fast");
+        $(".imagesswitch").slideToggle("fast");
     });
 
     $('.drawers').find('h5').click(function(){
