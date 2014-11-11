@@ -17,13 +17,15 @@
     %b Member since:
     = @user.created_at
   %p
-    %b Albums:
-    - @user.albums.each do |album|
-      = album.name
+    - if @user.albums != []
+      %b Albums:
+      - @user.albums.each do |album|
+        = album.name
   / %p
   /   %b Photos:
   /   %br
   /     - @user.photos.each do |photo|
   /       = photo.name
   /       = image_tag(photo.photo)
-  %p= link_to 'Edit Profile', edit_user_registration_path
+  - if current_user.id == @user.id
+    %p= link_to 'Edit Profile', edit_user_registration_path
