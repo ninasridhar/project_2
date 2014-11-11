@@ -1,11 +1,11 @@
 %p#notice= notice
-
+#user{data: {value: "#{current_user.id}"}} 
 %p
   = image_tag @photo.uploaded_image.url, class: "photo-show", id: 'votes'
 
 .votes
+  Likes:
   .no_votes
-    #user{data: {value: "#{current_user.id}"}} 
     = @votes
   - if @voted_already != true
     .thumbs
@@ -35,7 +35,20 @@
   %b Category:
   = @photo.category.name
 
-
 = link_to 'Edit', edit_photo_path(@photo)
 \|
 = link_to 'Back', photos_path
+
+- if current_user
+  %br
+  %br
+  %input#username
+  %br
+  %textarea#comment{placeholder: 'Comments'}
+  %br
+  %i.glyphicon.glyphicon-pencil#pencil
+  #pencil2  
+%br
+
+.comment
+
