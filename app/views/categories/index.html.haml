@@ -1,9 +1,16 @@
 %h1 Categories
-  
-- @categories.each do |c|
-  %div.categorybox
-    = c.name
 
 %br
+- @categories.each do |c|
+	%ul.drawers
+		%li
+			%h5 
+				= c.name
+			%p
+				-c.photos.each do |photo|
+					= link_to photo do
+						=image_tag photo.uploaded_image.thumb
 
-= link_to 'Add a new Category', new_category_path
+
+
+

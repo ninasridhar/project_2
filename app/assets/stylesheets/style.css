@@ -151,8 +151,24 @@ a{
 	margin-left: 2%
 }
 
-.navr img{
-	width: 70px;
-	margin-top: -20px;
+ul h5 {
+	background: black;
+	color: white;
+	width: 100%;
+	float: none;
+	padding: 0.5%;
 }
 
+ul p { 
+	display:none;
+}
+
+ul img{
+	width: 20%;
+	float: none;
+	margin-right: -0.5%
+}
+
+ul li{
+	list-style: none
+}
