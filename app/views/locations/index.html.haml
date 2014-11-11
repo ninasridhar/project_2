@@ -1,11 +1,7 @@
 
 = image_tag "compass.png", :class => "compass"
-%h1 Locations
 %h3 Discover images taken in your city!
-- @locations.each do |location|
-  %div.categorybox
-    = link_to(location.city, location_path(location))  
-    %br/
+
 
 #map_canvas
 
