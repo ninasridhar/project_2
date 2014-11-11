@@ -1,5 +1,5 @@
 %h1 Listing photos
 - @photos.each do |p|
-  %div.boxI
-    = link_to p do
-      =image_tag p.uploaded_image.thumb
+  .boxI
+    =link_to p do
+      = image_tag p.uploaded_image
