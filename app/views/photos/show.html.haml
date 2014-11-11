@@ -1,5 +1,6 @@
 %p#notice= notice
-#user{data: {value: "#{current_user.id}"}} 
+-if current_user != nil
+  #user{data: {value: "#{current_user.id}"}} 
 %p
   = image_tag @photo.uploaded_image.url, class: "photo-show", id: 'votes'
 
@@ -47,9 +48,9 @@
 - if current_user
   %br
   %br
-  %input#username
+  %input#username{placeholder: 'Name'}
   %br
-  %textarea#comment{placeholder: 'Comments'}
+  %textarea#comment{placeholder: 'What do you think?'}
   %br
   %i.glyphicon.glyphicon-pencil#pencil
   #pencil2  
