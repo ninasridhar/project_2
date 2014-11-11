@@ -32,7 +32,7 @@ header h1{
 article{
 	margin-left: 3%;
 	margin-right: 3%;
-	margin-top: 3%;
+	margin-top: 6%;
 }
 
 .search {
@@ -318,4 +318,12 @@ p a:hover{
 
 .drawers li h5:hover{
 	color: red
+}
+
+.albumsswitch{
+	visibility: hidden
+}
+
+.imagesswitch{
+	visibility: visible;
 }
