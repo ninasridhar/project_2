@@ -11,29 +11,34 @@
     .thumbs
       %i.glyphicon.glyphicon-thumbs-up#up{data: { vote: 1}}
       %i.glyphicon.glyphicon-thumbs-down#down{data: { vote: -1}}
+%br
+%a{:href => "http://www.tumblr.com/share", :style => "display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('https://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;", :title => "Share on Tumblr"} Share on Tumblr
+%br
+%a.twitter-share-button{"data-count" => "none", :href => "https://twitter.com/share"} Tweet
 
-%p
-  %b Name:
-  = @photo.name
-%p
-  %b Description:
-  = @photo.description
-%p
-  %b Taken By:
-  = @photo.user.name
-%p 
-  %b Added On:
-  = @photo.created_at
-%p
-  %b Albums:
-  - @photo.albums.each do |album|
-    = album.name
-%p
-  %b Location:
-  = @photo.location
-%p
-  %b Category:
-  = @photo.category.name
+.photoinfo
+  %p
+    %b Name:
+    = @photo.name
+  %p
+    %b Description:
+    = @photo.description
+  %p
+    %b Taken By:
+    = @photo.user.name
+  %p 
+    %b Added On:
+    = @photo.created_at
+  %p
+    %b Albums:
+    - @photo.albums.each do |album|
+      = album.name
+  %p
+    %b Location:
+    = @photo.location
+  %p
+    %b Category:
+    = @photo.category.name
 
 
 = link_to 'Edit', edit_photo_path(@photo)
