@@ -9,7 +9,9 @@
 
 #map_canvas
 
-%input#hometown{type: "hidden", value: "#{current_user.hometown}"}
+%input#places{type: "hidden", value: "#{@results.to_json}"}
+%input#imagesfromlocation{type: "hidden", value: "#{@images.to_json}"}
+/ %input#hometown{type: "hidden", value: "#{current_user.hometown.to_json}"}
 %br/
 
 = link_to 'New Location', new_location_path

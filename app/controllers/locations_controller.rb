@@ -4,6 +4,18 @@ class LocationsController < ApplicationController
   # GET /locations.json
   def index
     @locations = Location.all
+    
+    @photos = Photo.all 
+    # @images = []
+    # @places = []
+    @results = []
+    @photos.each do |p|
+      @results.push([p.uploaded_image, p.location])
+    end
+    
+    # @locationofphotos = {}
+    # @locationofphotos = images.zip(places)
+    # binding.pry
 
     respond_to do |format|
       format.html # index.html.erb
