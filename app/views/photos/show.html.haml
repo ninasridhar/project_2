@@ -17,13 +17,13 @@
 %br
 %a.twitter-share-button{"data-count" => "none", :href => "https://twitter.com/share"} Tweet
 
-/ .photoinfo
-/   %p
-/     %b Name:
-/     = @photo.name
-/   %p
-/     %b Description:
-/     = @photo.description
+.photoinfo
+  %p
+    %b Name:
+    = @photo.name
+  %p
+    %b Description:
+    = @photo.description
 /   %p
 /     %b Taken By:
 /     = @photo.user.name
@@ -41,9 +41,9 @@
 /     %b Category:
 /     = @photo.category.name
 
-/ = link_to 'Edit', edit_photo_path(@photo)
-/ \|
-/ = link_to 'Back', photos_path
+= link_to 'Edit', edit_photo_path(@photo)
+\|
+= link_to 'Back', photos_path
 
 - if current_user
   %br
