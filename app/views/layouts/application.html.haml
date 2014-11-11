@@ -26,7 +26,6 @@
 
       .navr
         -if current_user
-          Hello
           = link_to(current_user.name, user_path(current_user))
           %br/
           = link_to 'Log Out', destroy_user_session_path, :class => "navr", method: :delete 
