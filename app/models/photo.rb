@@ -24,4 +24,14 @@ class Photo < ActiveRecord::Base
     @votes  
   end
 
+  def who_voted(current_user)
+    self.votes.each do |vote|
+      if vote.user_id == current_user.id
+        @voted_already = true
+      end
+    end
+    @voted_already
+  end
+
+
 end
