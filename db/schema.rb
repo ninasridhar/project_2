@@ -33,9 +33,10 @@ ActiveRecord::Schema.define(:version => 20141110160057) do
   end
 
   create_table "comments", :force => true do |t|
-    t.integer  "user_id"
+    t.string   "username"
     t.integer  "multi_id"
     t.string   "multi_type"
+    t.text     "text"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -57,6 +58,7 @@ ActiveRecord::Schema.define(:version => 20141110160057) do
     t.text     "photo_link"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.string   "upload_image"
     t.string   "uploaded_image"
   end
 

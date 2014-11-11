@@ -5,9 +5,9 @@ class User < ActiveRecord::Base
 
   attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :username, :bio, :hometown, :user_image
 
-  validates :password, presence: true, on: :create
-  validates :email, presence: :true, uniqueness: {case_sensitive: false}
-  validates :username, presence: :true, uniqueness: {case_sensitive: false}
+  # validates :password, presence: true, on: :create
+  # validates :email, presence: :true, uniqueness: {case_sensitive: false}
+  # validates :username, presence: :true, uniqueness: {case_sensitive: false}
 
   has_many :albums
   has_many :photos
