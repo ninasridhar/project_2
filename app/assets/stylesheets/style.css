@@ -9,7 +9,6 @@ header{
 	height: 70px;
 	margin: 0px;
 	padding: 3px;
-	margin-bottom: 50px;
 }
 
 
@@ -18,13 +17,15 @@ img {
 }
 
 .icon{
-	width: 120px;
+	width: 150px;
 	float: left;
 }
 
 header h1{
 	float: left;
-	margin-left: 1%
+	margin-left: 1%;
+	font-weight: 100;
+	line-height: 140%
 }
 
 article{
@@ -69,16 +70,17 @@ a.categorybox{
 }
 
 .searchbox{
-	height: 25px;
-	width: 250px;
 	float: left;
 	background: rgba(0,0,0,0);
 	margin: none;
-	font-size: 20px;
+	font-size: 40px;
 	color: white;
 	margin-top: 4px;
 	display: none;
 	border: 0px;
+	height: 55px;
+	width: 500px;
+	font-weight: 100
 }
 
 button{
@@ -94,24 +96,26 @@ button{
 	float: left;
 	margin: 5px;
 	color: white;
-	background-color: black;
 	text-decoration: none;
-	font-size: 15px;
-	margin-top: 1.2%
+	font-size: 25px;
+	font-weight: 100;
+	line-height: 3.5;
 }
 
 .navr{
 	float: right;
-	margin: 5px;
 	color: white;
 	background-color: black;
 	text-decoration: none;
-	font-size: 15px;
-	margin-top: 1.2%
+	font-size: 20px;
+	line-height: 1;
+	font-weight: 100;
+	margin: 1%
 }
 
 .lupe{
-	width: 30px
+	width: 30px;
+	margin-top: 100%
 }
 
 a{
@@ -126,11 +130,63 @@ a{
 
 
 .boxI img{
-	width: 100%
+	width: 100%;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.boxI img:hover{
+	filter: grayscale(30%);
+	-webkit-filter: grayscale(30%);
+	-moz-filter: grayscale(30%);
+	filter: grayscale(30%);
+	filter: gray;
+	-webkit-filter: grayscale(.5);
+
 }
 
 .userimage{
 	width: 35%;
 	float: left;
-	border-radius: 100%
+	border-radius: 100%;
+	margin-left: 2%
+}
+
+ul h5 {
+	background: black;
+	color: white;
+	width: 100%;
+	float: none;
+	padding: 0.5%;
+}
+
+ul p { 
+	display:none;
+}
+
+ul img{
+	width: 20%;
+	float: none;
+	margin-right: -0.5%
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+ul img:hover{
+	filter: grayscale(30%);
+	-webkit-filter: grayscale(30%);
+	-moz-filter: grayscale(30%);
+	filter: grayscale(30%);
+	filter: gray;
+	-webkit-filter: grayscale(.5);
+}
+
+ul li{
+	list-style: none
 }

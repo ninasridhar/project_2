@@ -4,8 +4,14 @@ $(document).ready(function(){
     	$(".nav").toggle("fast");
         $(".searchbox").slideToggle("fast");
     });
-
+    $('.drawers').find('h5').click(function(){
+    $(this).next().slideToggle();
+    $(".drawers p").not($(this).next()).slideUp();
+	});
 });
+
+
+
 
 
 var playAudio = $("audio")[0];

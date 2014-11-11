@@ -7,12 +7,10 @@
   .no_votes
     #user{data: {value: "#{current_user.id}"}} 
     = @votes
-  / = link_to new_vote_path do
   - if @voted_already != true
     .thumbs
       %i.glyphicon.glyphicon-thumbs-up#up{data: { vote: 1}}
       %i.glyphicon.glyphicon-thumbs-down#down{data: { vote: -1}}
-   
 
 %p
   %b Name:
