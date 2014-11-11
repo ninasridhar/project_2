@@ -18,23 +18,24 @@
   %p
     %b Member since:
     = @user.created_at
-  %p
-    - if @user.albums != []
-      %b Albums:
-      - @user.albums.each do |album|
-        = album.name
 
 
+%button.albumbutton
+  Album
+%button.imagebutton
+  Images
 
 .maxwidth
-  - if @user.photos != []
-    - @user.photos.each do |photo|
-      = link_to photo do
-        = image_tag photo.uploaded_image.thumb, class: "box2"
-  / %p
-  /   %b Photos:
-  /   %br
-  /     - @user.photos.each do |photo|
-  /       = photo.name
-  /       = image_tag(photo.photo)
+  .imagesswitch  
+    - if @user.photos != []
+      - @user.photos.each do |photo|
+        = link_to photo do
+          = image_tag photo.uploaded_image.thumb, class: "box2"
+  .albumsswitch
+    - if @user.albums
+      - @user.albums.each do |album|
+        = link_to album do
+          %li= album.name
+  
+    
   
