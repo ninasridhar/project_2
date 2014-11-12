@@ -17,6 +17,10 @@ img {
   width: 800px;
 }
 
+.more{
+	display: none
+}
+
 .icon{
 	width: 150px;
 	float: left;
@@ -352,7 +356,9 @@ p a:hover{
 @media (max-width: 650px){
 	.icon{
 		height: 80px;
-		width: auto
+		width: auto;
+		margin-right: -15px;
+		margin-left: -10px
 	}
 	.icon:hover{
 		height: 80px;
@@ -374,5 +380,31 @@ p a:hover{
 	.userimage{
 		float: none;
 		width: 100%
+	}
+	.navr{
+		display: none
+	}
+	.lupe{
+		display: none
+	}
+	.more{
+		display: inherit;
+		float: left;
+		margin: 5px;
+		color: white;
+		font-size: 20px;
+		font-weight: 100;
+		line-height: 3.5;
+		font-weight: 100;
+	}
+	.more:hover{
+		color: red
+	}
+	.nav{
+		margin-right: 1px
+	}
+	.searchbox{
+		width: 20px;
+		height: 20px
 	}
 }

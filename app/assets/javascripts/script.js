@@ -7,6 +7,13 @@ $(document).ready(function(){
         $(".searchbox").slideToggle("fast");
     });
 
+    $(".more").click(function () {
+        console.log('YO!')
+        $(".nav").toggle("slow");
+        $(".navr").toggle("slow");
+        $(".searchbox").slideToggle("fast");
+    });
+
 
     $(".albumbutton").click(function () {
         console.log('YO!')
