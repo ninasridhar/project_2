@@ -1,4 +1,11 @@
 - @sorted.each do |p|
   = link_to p do
-    .boxI
-      = image_tag p.uploaded_image.thumb
+    .boxI.imagetext
+      .imageblur
+        = image_tag p.uploaded_image.thumb
+      %h6
+        %span
+          = p.name
+          %br
+          = p.user.name
+      
