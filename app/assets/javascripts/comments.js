@@ -36,8 +36,6 @@ ajaxComments.postComment = function(event){
 }
 
 $(function(){
-  console.log('yo')
   $('#pencil').on('click', ajaxComments.postComment);
   ajaxComments.getComments();
 })
- 
