@@ -1,4 +1,4 @@
-- @photos.each do |p|
-  .boxI
-    =link_to p do
+- @sorted.each do |p|
+  = link_to p do
+    .boxI
       = image_tag p.uploaded_image.thumb
