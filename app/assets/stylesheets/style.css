@@ -299,28 +299,33 @@ a.twitter-share-button {
 }
 
 .commentbox{
-	width: 100%;
+	width: 45%;
 	margin-left: 5%;
-	float: inline
+	float: left;
 }
 
 .commentarea{
 	float: left;
-	width: 100%;
+	width: 50%;
 }
 
 #username{
-	width: 20%;
+	width: 100%;
 	border: solid black 2px;
 	margin-bottom: 1%;
 	padding: 0.5%
 }
 
 #comment{
-	width: 40%;
-	border: solid black 2px;
+	width: 100%;
 	color: black;
 	padding: 0.5%
+}
+
+.comment{
+	float: right;
+	width: 50%;
+	padding: 3%
 }
 
 header > a:hover {
@@ -457,9 +462,11 @@ p a:hover{
 }
 
 #navalbumsindex li{
-	height: 515px;
-	margin-top: 10%;
+	height: auto;
+	margin-top: 5%;
 	text-align: center;
+	width: 50%;
+	float: left;
 }
 
 #albumindeximage img{
@@ -467,3 +474,38 @@ p a:hover{
 	width: 50%;
 }
 
+.albumshowcomment{
+	width: 45%;
+	margin-left: 3%;
+	margin-top: 3%;
+	height: auto;
+}
+
+.albumcomment{
+	width: 50%;
+	height: auto;
+	border: solid black 2px
+}
+
+.albumusername{
+	width: 10%
+}
+
+#albumshowpage{
+	height: 300px;
+}
+
+.albumshowinfo{
+	height: auto;
+	margin-left: 3%
+}
+
+.comment{
+	float: left;
+	margin-left: 3%
+}
+
+.albumcomment{
+	border: solid black 2px;
+	width: 50%;
+}

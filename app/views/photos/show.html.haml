@@ -3,6 +3,7 @@
   #user{data: {value: "#{current_user.id}"}} 
 %p.titlephoto
   = @photo.name
+  = link_to '| Edit', edit_photo_path(@photo)
 %p
   = image_tag @photo.uploaded_image.url, class: "photo-show", id: 'votes'
 
@@ -15,8 +16,6 @@
       %i.glyphicon.glyphicon-thumbs-up#up{data: { vote: 1}}
       %i.glyphicon.glyphicon-thumbs-down#down{data: { vote: -1}}
 %br
-  %a{"data-pin-color" => "red", "data-pin-do" => "buttonBookmark", "data-pin-height" => "28", :href => "//de.pinterest.com/pin/create/button/", :class => "socialbutton1"}
-  %br
 .socialbutton2
   %a.twitter-share-button{"data-count" => "none", :href => "https://twitter.com/share"} Tweet
 
@@ -55,9 +54,6 @@
       #pencil2  
     %br
     
-    .comment
+.comment#commentphoto
 
 
-= link_to 'Edit', edit_photo_path(@photo)
-\|
-= link_to 'Back', photos_path
