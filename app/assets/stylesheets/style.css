@@ -367,4 +367,12 @@ p a:hover{
 	.navr{
 		font-size: 10px
 	}
+	.user_info{
+		float: none;
+		width: 100%;
+	}
+	.userimage{
+		float: none;
+		width: 100%
+	}
 }
