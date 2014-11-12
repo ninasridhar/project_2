@@ -12,6 +12,7 @@ class LocationsController < ApplicationController
     @photos.each do |p|
       @results[p.location] = {
         image: p.uploaded_image
+        # id: p.id
       }
     @results
     end

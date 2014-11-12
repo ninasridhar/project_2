@@ -170,6 +170,10 @@ a{
 	height: auto;
 }
 
+.boxII{
+	width: 100%;
+	height: auto;
+}
 
 .boxI img{
 	width: 100%;
@@ -509,3 +513,22 @@ p a:hover{
 	border: solid black 2px;
 	width: 50%;
 }
+
+#map_page{
+	width: 80%;
+	height: 60%;
+	margin: 0 auto;
+}
+
+#map_text{
+	text-align: center;
+}
+
+#map_canvas{
+	margin-left: 23%;
+	margin-top: 5%;
+	border: 10px solid;
+	border-radius: 10%;
+}
+
+
