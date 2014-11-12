@@ -332,16 +332,10 @@ p a:hover{
 		font-size: 15px;
 		visibility: visible
 	}
-	header{
-
-	}
 	.searchbox{
 		width: 150px
 	}
-}
-
-@media (max-width: 900px){
-	header h1{
+		header h1{
 		display: none
 	}
 	.boxI{
@@ -366,5 +360,11 @@ p a:hover{
 		margin-top: 0;
 		margin-left: 0;
 		margin-right: 0
+	}
+	.text_field{
+		width: 100%
+	}
+	.navr{
+		font-size: 10px
 	}
 }
