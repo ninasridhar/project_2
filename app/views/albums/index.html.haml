@@ -1,25 +1,10 @@
-/ %h1 Listing albums
-
-/ %table
-/   %tr
-/     %th Name
-/     %th Description
-/     %th User
-/     %th
-/     %th
-/     %th
 %ul#navalbumsindex
   - @albums.each do |album|
     %li
       #albumindeximage
-        = image_tag album.photos.sample.uploaded_image
+        = image_tag album.photos.sample.uploaded_image.thumb
       #albumindextext
-        %h1= album.name
+        %h1= link_to(album.name, album_path(album))
         %h4= "By"
-        %h3= album.user.name
-        / %td= album.description
-        / %td= link_to 'Show', album
-        / %td= link_to 'Edit', edit_album_path(album)
-        / %td= link_to 'Destroy', album, :method => :delete, :data =:confirm'Areyousure?' }
-      %br/
-      / = link_to 'New Album', new_album_path
+        %h3= link_to(album.user.name, user_path(album.user))
+

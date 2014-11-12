@@ -1,14 +1,15 @@
 %p#notice= notice
 
-%p
-  %b Name:
-  = @album.name
-%p
-  %b Description:
+#albumshowpage
+  %h1= @album.name
+  %h4= "By"
+  %h3= @album.user.name
+
   = @album.description
-%p
-  %b User:
-  = @album.user_id
+
+  #albumsshowimages
+    - @album.photos.each do |photo|
+      = image_tag photo.uploaded_image.thumb, class: "boxI"
 
 = link_to 'Edit', edit_album_path(@album)
 \|

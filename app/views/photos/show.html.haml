@@ -2,7 +2,7 @@
 -if current_user != nil
   #user{data: {value: "#{current_user.id}"}} 
 %p
-  = image_tag @photo.uploaded_image.url, class: "photo-show", id: 'votes'
+  = image_tag @photo.uploaded_image.thumb, class: "photo-show", id: 'votes'
 
 .votes
   Likes:
