@@ -154,6 +154,12 @@ button{
 	margin-top: 100%
 }
 
+.titlephoto{
+	margin-left: 5%;
+	margin-bottom: 1.5%;
+	font-size: 40px;
+}
+
 a{
 	color: white;
 }
@@ -255,7 +261,21 @@ a.twitter-share-button {
 
 .photo-show{
   display: inline-block;
-  width: 100%;
+  width: 80%;
+  height: auto;
+  margin-left: 5%;
+  float: left;
+  margin-bottom: 2%
+}
+
+.socialbutton1{
+
+}
+
+.socialbutton2{
+	float: left;
+	width: 15%;
+	text-align: center
 }
 
 .votes{
@@ -265,14 +285,43 @@ a.twitter-share-button {
 }
 
 .photoinfo{
-	width: 50%;
+	width: 40%;
+	height: auto;
+	margin-left: 5%;
 }
-.photoinfo p{
-	
+
+.votes{
+	float: right;
+	width: 15%;
+	text-align: center;
+	height: 10%;
+	padding: 2%;
 }
 
+.commentbox{
+	width: 100%;
+	margin-left: 5%;
+	float: inline
+}
 
+.commentarea{
+	float: left;
+	width: 100%;
+}
 
+#username{
+	width: 20%;
+	border: solid black 2px;
+	margin-bottom: 1%;
+	padding: 0.5%
+}
+
+#comment{
+	width: 40%;
+	border: solid black 2px;
+	color: black;
+	padding: 0.5%
+}
 
 header > a:hover {
     color: red;

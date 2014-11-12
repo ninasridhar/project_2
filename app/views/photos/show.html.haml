@@ -1,8 +1,10 @@
 %p#notice= notice
 -if current_user != nil
   #user{data: {value: "#{current_user.id}"}} 
+%p.titlephoto
+  = @photo.name
 %p
-  = image_tag @photo.uploaded_image.thumb, class: "photo-show", id: 'votes'
+  = image_tag @photo.uploaded_image.url, class: "photo-show", id: 'votes'
 
 .votes
   Likes:
@@ -13,14 +15,12 @@
       %i.glyphicon.glyphicon-thumbs-up#up{data: { vote: 1}}
       %i.glyphicon.glyphicon-thumbs-down#down{data: { vote: -1}}
 %br
-%a{:href => "http://www.tumblr.com/share", :style => "display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('https://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;", :title => "Share on Tumblr"} Share on Tumblr
-%br
-%a.twitter-share-button{"data-count" => "none", :href => "https://twitter.com/share"} Tweet
+  %a{"data-pin-color" => "red", "data-pin-do" => "buttonBookmark", "data-pin-height" => "28", :href => "//de.pinterest.com/pin/create/button/", :class => "socialbutton1"}
+  %br
+.socialbutton2
+  %a.twitter-share-button{"data-count" => "none", :href => "https://twitter.com/share"} Tweet
 
 .photoinfo
-  %p
-    %b Name:
-    = @photo.name
   %p
     %b Description:
     = @photo.description
@@ -41,20 +41,23 @@
     %b Category:
     = @photo.category.name
 
+
+.commentarea
+  .commentbox
+    - if current_user
+      %br
+      %br
+      %input#username{placeholder: 'Name'}
+      %br
+      %textarea#comment{placeholder: 'What do   you think?'}
+      %br
+      %i.glyphicon.glyphicon-pencil#pencil
+      #pencil2  
+    %br
+    
+    .comment
+
+
 = link_to 'Edit', edit_photo_path(@photo)
 \|
 = link_to 'Back', photos_path
-
-- if current_user
-  %br
-  %br
-  %input#username{placeholder: 'Name'}
-  %br
-  %textarea#comment{placeholder: 'What do you think?'}
-  %br
-  %i.glyphicon.glyphicon-pencil#pencil
-  #pencil2  
-%br
-
-.comment
-

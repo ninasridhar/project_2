@@ -10,7 +10,7 @@
     %script{:src => "http://platform.tumblr.com/v1/share.js"}
     %script{:src => "http://cdn.jsdelivr.net/jquery.fullpage/2.4.1/jquery.fullPage.min.js"}
     %link{:href => "http://media.tumblr.com/tumblr_lytt98aMMJ1qfo540.jpg", :rel => "shortcut icon"}
-    
+    %script{:async => "", :src => "//assets.pinterest.com/js/pinit.js", :type => "text/javascript"}
   %body
     %header
       %h1 Snap
@@ -44,6 +44,4 @@
     %br  
     %article
       = yield
-.footer
-  %p A footer
 /%audio_tag.speak 'assets/images/snap.wav'
