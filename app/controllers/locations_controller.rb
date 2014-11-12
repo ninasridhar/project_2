@@ -13,6 +13,7 @@ class LocationsController < ApplicationController
       @results[p.location] = {
         image: p.uploaded_image
       }
+    @results
     end
     
     # @locationofphotos = {}

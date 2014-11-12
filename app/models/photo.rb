@@ -33,5 +33,11 @@ class Photo < ActiveRecord::Base
     @voted_already
   end
 
-
+  def arrangephotosinorder
+    @arrangephotosinorder = {}
+    @photos.each do |photo|
+      @arrangephotosinorder[photo.votes_counter] = photo
+    end
+    @arrangephotosinorder = @arrangephotosinorder.sort.reverse
+  end
 end
