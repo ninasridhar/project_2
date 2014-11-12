@@ -46,6 +46,11 @@ v2 = Vote.create(photo_id: 2, number_of_votes: 3)
 v3 = Vote.create(photo_id: 3, number_of_votes: -12)
 v4 = Vote.create(photo_id: 4, number_of_votes: 2)
 v5 = Vote.create(photo_id: 5, number_of_votes: -1)
+v6 = Vote.create(photo_id: 6, number_of_votes: 0)
+v7 = Vote.create(photo_id: 7, number_of_votes: 4)
+v8 = Vote.create(photo_id: 8, number_of_votes: 12)
+v9 = Vote.create(photo_id: 9, number_of_votes: 3)
+v10 = Vote.create(photo_id: 10, number_of_votes: 1)
 
 a1 = Album.create(name:'Animals In The Zoo', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', user_id: 1)
 
