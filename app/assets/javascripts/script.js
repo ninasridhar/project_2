@@ -33,14 +33,6 @@ $(document).ready(function(){
     $(this).next().slideToggle();
     $(".drawers p").not($(this).next()).slideUp();
 	});
-    
-    $(".lupe").mouseenter(function(){
-    $("<audio></audio>").attr({ 
-        'src':'audios/snap.wav', 
-        'volume':0.4,
-        'autoplay':'autoplay'
-    }).appendTo("body");
-});
 });
 
 
