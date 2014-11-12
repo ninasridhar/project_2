@@ -10,7 +10,7 @@
     %script{:src => "http://platform.tumblr.com/v1/share.js"}
     %script{:src => "http://cdn.jsdelivr.net/jquery.fullpage/2.4.1/jquery.fullPage.min.js"}
     %link{:href => "http://media.tumblr.com/tumblr_lytt98aMMJ1qfo540.jpg", :rel => "shortcut icon"}
-    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js", :type => "text/javascript"}
+    
   %body
     %header
       %h1 Snap
@@ -28,6 +28,8 @@
             %input{name: "q", type: "text", placeholder: "Search", :class => "searchbox"}
           %button
             = image_tag "lw.jpg", :class => "lupe"
+          %button.more
+            %p.more +
 
       .navr
         -if current_user

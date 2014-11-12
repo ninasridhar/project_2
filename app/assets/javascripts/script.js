@@ -7,6 +7,13 @@ $(document).ready(function(){
         $(".searchbox").slideToggle("fast");
     });
 
+    $(".more").click(function () {
+        console.log('YO!')
+        $(".nav").toggle("slow");
+        $(".navr").toggle("slow");
+        $(".searchbox").slideToggle("fast");
+    });
+
 
     $(".albumbutton").click(function () {
         console.log('YO!')
@@ -26,14 +33,6 @@ $(document).ready(function(){
     $(this).next().slideToggle();
     $(".drawers p").not($(this).next()).slideUp();
 	});
-    
-    $(".lupe").mouseenter(function(){
-    $("<audio></audio>").attr({ 
-        'src':'audios/snap.wav', 
-        'volume':0.4,
-        'autoplay':'autoplay'
-    }).appendTo("body");
-});
 });
 
 
