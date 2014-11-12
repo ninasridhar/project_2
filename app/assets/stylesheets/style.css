@@ -327,3 +327,16 @@ p a:hover{
 .imagesswitch{
 	visibility: visible;
 }
+
+#navalbumsindex li{
+	height: 515px;
+	margin-top: 10%;
+	text-align: center;
+}
+
+#albumindeximage img{
+	border-radius: 100%;
+	width: 50%;
+}
+
+
