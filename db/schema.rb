@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(:version => 20141110160057) do
     t.text     "photo_link"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.string   "upload_image"
     t.string   "uploaded_image"
   end
 
