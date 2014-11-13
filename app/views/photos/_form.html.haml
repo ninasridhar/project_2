@@ -8,24 +8,30 @@
 
   .field
     = f.label :name
+    %br
     = f.text_field :name, :class => "text_field"
   .field
     = f.label :description
+    %br
     = f.text_area :description, :class => "text_field"
   = f.hidden_field :user_id, :value => current_user.id
   .field
     = f.label :location
+    %br
     = f.text_field :location, :class => "text_field"
   .field
     = f.label :category_id
+    %br
     = f.collection_select(:category_id, Category.all, :id, :name)
   .field
     = f.label :album
+    %br
     - current_user.albums.all.each do |album|
       = check_box_tag "photo[album_ids][]", album.id, @photo.album_ids.include?(album.id)
       = album.name
   .field
     = f.label :uploaded_image
+    %br
     = f.file_field :uploaded_image
   .actions
     = f.submit 'Save'

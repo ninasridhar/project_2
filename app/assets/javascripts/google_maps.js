@@ -15,7 +15,6 @@ mapApp.initialize = function(){
 
   var result = document.getElementById('places').value;
   address = eval('(' + result + ')');
-
   var input = $('#searchbox')[0];
   searchBox = new google.maps.places.SearchBox(input);
 
