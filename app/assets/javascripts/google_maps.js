@@ -69,7 +69,7 @@ mapApp.codeAddress = function(){
           mapApp.setEventListeners();
         }
       }    
-    })
+    });
   });
 }
 
