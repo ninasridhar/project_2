@@ -13,15 +13,18 @@
     = f.label :description
     = f.text_area :description, :class => "text_field"
   = f.hidden_field :user_id, :value => current_user.id
-  /.field
-  / = f.label :album_id
-  / = f.number_field :album_id
   .field
     = f.label :location
     = f.text_field :location, :class => "text_field"
   .field
     = f.label :category_id
-    = f.number_field :category_id, :class => "text_field"
+    = f.collection_select(:category_id, Category.all, :id, :name)
+
+  .field
+    = f.label :album
+    - current_user.albums.all.each do |album|
+      = check_box_tag "photo[album_ids][]", album.id, @photo.album_ids.include?(album.id)
+      = album.name
   .field
     = f.label :uploaded_image
     = f.file_field :uploaded_image
