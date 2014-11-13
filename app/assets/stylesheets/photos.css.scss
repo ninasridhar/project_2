@@ -69,18 +69,12 @@
 h6 { 
    position: absolute; 
    top: 20px; 
-   left: 0; 
-   width: 100%; 
-   font-weight: 200;
+   left: 0;
+   text-align: center;
+   width: 100%;
 }
 
 h6 span { 
    width: 100%;
-   color: white; 
-   font: 24px/45px Helvetica, Sans-Serif; 
    font-weight: 100;
-   letter-spacing: -1px;  
-   // background: rgb(0, 0, 0); fallback color
-   background: rgba(0, 0, 0, 0.7);
-   padding: 9px; 
 }
