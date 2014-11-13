@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(:version => 20141110160057) do
   end
 
   create_table "comments", :force => true do |t|
-    t.string   "username"
+    t.integer  "user_id"
     t.integer  "multi_id"
     t.string   "multi_type"
     t.text     "text"

@@ -43,6 +43,7 @@ class VotesController < ApplicationController
   # POST /votes.json
   def create
     @vote = Vote.create(params[:vote])
+    @vote.user_id = current_user.id
     # (user_id: current_user.id, photo_id: params[:photo_id], number_of_votes: 1)
 
     respond_to do |format|

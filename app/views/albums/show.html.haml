@@ -1,4 +1,6 @@
 %p#notice= notice
+-if current_user != nil
+  #user{data: {value: "#{current_user.id}"}} 
 
 #albumshowpage
   .albumshowinfo

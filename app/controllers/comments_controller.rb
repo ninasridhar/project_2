@@ -3,10 +3,14 @@ class CommentsController < ApplicationController
   # GET /comments.json
   def index
     @comments = Comment.all
+    @results = []
+    @comments.each do |comment|
+      @results.push({user_name: User.find(comment.user_id).name, comments:comment.text, multi_id: comment.multi_id, multi_type: comment.multi_type})
+    end
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @comments }
+      format.json { render json: @results }
     end
   end
 
@@ -41,7 +45,7 @@ class CommentsController < ApplicationController
   # POST /comments.json
   def create
     @comment = Comment.new(params[:comment])
-
+    @comment.user_id = current_user.id
     respond_to do |format|
       if @comment.save
         format.html { redirect_to @comment, notice: 'Comment was successfully created.' }
