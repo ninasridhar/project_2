@@ -3,6 +3,7 @@ class PhotosController < ApplicationController
   # GET /photos.json
   def index
     @photos = Photo.all
+    @sorted = @photos.sort! { |a,b| a.votes_counter <=> b.votes_counter }.reverse.each_slice(12).first
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @photos }

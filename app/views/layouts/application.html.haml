@@ -20,7 +20,14 @@
         =link_to 'Albums', albums_path, :class => "nav"
         =link_to 'Photos', photos_path, :class => "nav"
         =link_to 'Categories', categories_path, :class => "nav"
-        =link_to 'Upload', new_photo_path, :class => "nav"
+        %ul
+          %li
+            %a.nav{:href => "https://www.youtube.com/watch?v=otCpCn0l4Wo"} add
+            %ul.fallback
+              %li.navdown
+                %a=link_to 'Photo', new_photo_path
+              %li.nav.navdown
+                %a.nav=link_to 'Album', albums_path
         .searchbar
           %form{action: "/search", method: :get, :class => "searchbox"}
             %input{name: "q", type: "text", placeholder: "Search", :class => "searchbox"}
