@@ -61,11 +61,13 @@
       Albums
     %p
       - current_user.albums.each do |album|
-        = image_tag album.photos.sample.uploaded_image.thumb 
+        = link_to album do 
+          = image_tag album.photos.sample.uploaded_image.thumb 
     %h5.profile
       Photos
     %p
       - current_user.photos.each do |photo|
-        = image_tag photo.uploaded_image.thumb 
+        = link_to photo do
+          = image_tag photo.uploaded_image.thumb 
     
   
