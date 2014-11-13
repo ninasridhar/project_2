@@ -111,7 +111,7 @@ a.categorybox{
 		display: none;
 		border: 0px;
 		height: 55px;
-		width: 500px;
+		width: 300px;
 		font-weight: 100
 }
 
@@ -183,6 +183,13 @@ a{
 	height: auto;
 }
 
+.boxIII{
+	float: left;
+	width: 25%;
+	height: auto;
+	margin-bottom: 10%;
+}
+
 .boxI img{
 	width: 100%;
 	-webkit-transition: all 1s ease;
@@ -202,27 +209,83 @@ a{
 
 }
 
+.albumstile{
+	float: left;
+	width: 50%;
+	height: auto;
+}
+
+.albumstile img{
+	width: 100%;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.albumstile img:hover{
+	filter: grayscale(50%);
+	-webkit-filter: grayscale(50%);
+	-moz-filter: grayscale(50%);
+	filter: grayscale(50%);
+	filter: gray;
+	-webkit-filter: grayscale(.5);
+
+}
+
 .userimage{
 	width: 35%;
 	float: left;
 	border-radius: 100%;
-	margin-left: 2%
+	margin-left: 2%;
+	margin-right: 13%;
 }
 
+
 ul h5 {
-	background: black;
-	color: white;
-	width: 100%;
+	color: black;
+	width: 103%;
 	float: none;
 	padding: 0.5%;
+	padding-left: 6%;
+	margin-left: -3%;
+
+/*	text-decoration: underline;*/
 }
+
+ul h5:hover{
+	color: white;
+	background: black;
+}
+
+ul h5.profile{
+	background: black;
+	color: white;
+	width: 103%;
+	float: none;
+	padding: 0.5%;
+	padding-left: 3%;
+	margin-left: -3%;
+	clear: both;
+}
+
+/*ul h6{
+	background: black;
+	color: white;
+	width: 103%;
+	float: left;
+	padding: 0.5%;
+	padding-left: 3%;
+	margin-left: -3%;
+}*/
 
 ul p { 
 	display:none;
 }
 
 ul img{
-	width: 20%;
+	width: 25%;
 	float: none;
 	margin-right: -0.7%;
 	-webkit-transition: all 1s ease;
@@ -238,7 +301,7 @@ ul img:hover{
 	-moz-filter: grayscale(30%);
 	filter: grayscale(30%);
 	filter: gray;
-	-webkit-filter: grayscale(.5);
+	-webkit-filter: grayscale(.7);
 }
 
 ul li{
@@ -316,7 +379,7 @@ a.twitter-share-button {
 
 .commentbox{
 	width: 45%;
-	margin-left: 5%;
+	margin-left: 10%;
 	float: left;
 }
 
@@ -341,7 +404,7 @@ a.twitter-share-button {
 .comment{
 	float: right;
 	width: 50%;
-	padding: 3%
+	margin-left: 20%
 }
 
 header > a:hover {
@@ -374,13 +437,10 @@ p a:hover{
 	color: red
 }
 
-.albumsswitch{
-	visibility: hidden
+.drawers{
+	margin-left: -3%;
 }
 
-.imagesswitch{
-	visibility: visible;
-}
 
 .footer{
 	width: 100%;
@@ -481,18 +541,18 @@ p a:hover{
 	height: auto;
 	margin-top: 5%;
 	text-align: center;
-	width: 50%;
+	width: 33.3%;
 	float: left;
 }
 
 #albumindeximage img{
 	border-radius: 100%;
-	width: 50%;
+	width: 90%;
 }
 
 .albumshowcomment{
 	width: 45%;
-	margin-left: 3%;
+	margin-left: 20%;
 	margin-top: 3%;
 	height: auto;
 }
@@ -507,18 +567,29 @@ p a:hover{
 	width: 10%
 }
 
+#albumindextext a{
+	text-decoration: none;
+	color: red;
+}
+
+#albumindextext a:hover{
+	color: black;
+}
+
 #albumshowpage{
 	height: 300px;
 }
 
 .albumshowinfo{
+	width: 50%;
 	height: auto;
-	margin-left: 3%
+	margin-left: 20%
 }
 
 .comment{
 	float: left;
-	margin-left: 3%
+	margin-left: 5%;
+	width: 40%;
 }
 
 .albumcomment{
@@ -574,6 +645,27 @@ p a:hover{
 	font-weight: 100;
 }
 
+.headline{
+	width: 100%;
+	text-align: center;
+}
+
+.hovername{
+	color: rgba(255, 255, 255, 0);
+	font-size: 40px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+
+.hovername:hover{
+	color: rgba(255, 255, 255, 1);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 .formcentre input{
 	width: 400px;
 }
@@ -585,3 +677,7 @@ p a:hover{
 	color:red;
 }
 
+.formcentre img{
+	height: 50px;
+	width: 150px;
+}
