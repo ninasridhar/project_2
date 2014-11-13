@@ -204,9 +204,12 @@ a{
 ul h5 {
 	background: black;
 	color: white;
-	width: 100%;
+	width: 103%;
 	float: none;
 	padding: 0.5%;
+	padding-left: 3%;
+	margin-left: -3%;
+
 }
 
 ul p { 
@@ -531,4 +534,21 @@ p a:hover{
 	border-radius: 10%;
 }
 
+.headline{
+	width: 100%;
+	text-align: center;
+}
 
+.hovername{
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 40px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.hovername:hover{
+	color: rgba(255, 255, 255, 1)
+}
