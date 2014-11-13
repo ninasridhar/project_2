@@ -669,14 +669,7 @@ p a:hover{
 	color:red;
 }
 
-.albumshowboxes{
-	/*margin-bottom: 10%;*/
-}
-
-#useralbumindeximage{
-
-}
-
-#useralbumindextext{
-	
+.formcentre img{
+	height: 50px;
+	width: 150px;
 }
