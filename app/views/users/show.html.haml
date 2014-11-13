@@ -36,25 +36,6 @@
   - if current_user.id == @user.id
     %p= link_to 'Edit Profile', edit_user_registration_path
 
-
-/ %button.albumbutton
-/   Album
-/ %button.imagebutton
-/   Images
-
-/ .maxwidth
-/   .imagesswitch  
-/   - if @user.photos 
-/     - @user.photos.each do |photo|
-/       = link_to photo do
-/         = image_tag photo.uploaded_image.thumb, class: "box2"
-/   .albumsswitch
-/   - if @user.albums
-/     - @user.albums.each do |album|
-/       = link_to album do
-/         %li= album.name
-/   %p Albums are comming soon
-
 %ul.drawers
   %li
     %h5.profile
