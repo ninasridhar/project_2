@@ -250,8 +250,15 @@ ul h5 {
 	padding: 0.5%;
 	padding-left: 6%;
 	margin-left: -3%;
-	text-decoration: underline;
+
+/*	text-decoration: underline;*/
 }
+
+ul h5:hover{
+	color: white;
+	background: black;
+}
+
 ul h5.profile{
 	background: black;
 	color: white;
@@ -372,7 +379,7 @@ a.twitter-share-button {
 
 .commentbox{
 	width: 45%;
-	margin-left: 5%;
+	margin-left: 10%;
 	float: left;
 }
 
@@ -581,7 +588,8 @@ p a:hover{
 
 .comment{
 	float: left;
-	margin-left: 3%
+	margin-left: 5%;
+	width: 40%;
 }
 
 .albumcomment{
