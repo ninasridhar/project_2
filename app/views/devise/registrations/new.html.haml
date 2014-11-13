@@ -4,30 +4,30 @@
   .field 
     = f.label :name
     %br/
-    = f.text_field :name, autofocus: true
+    = f.text_field :name, autofocus: true, :class => "text_field"
   .field
     = f.label :email
     %br/
-    = f.email_field :email
+    = f.email_field :email, :class => "text_field"
   .field
     = f.label :password
     - if @validatable
       %em
         (#{@minimum_password_length} characters minimum)
     %br/
-    = f.password_field :password, autocomplete: "off"
+    = f.password_field :password, autocomplete: "off", :class => "text_field"
   .field
     = f.label :password_confirmation
     %br/
-    = f.password_field :password_confirmation, autocomplete: "off"
+    = f.password_field :password_confirmation, autocomplete: "off", :class => "text_field"
   .field
     = f.label :hometown
     %br/
-    = f.text_field :hometown
+    = f.text_field :hometown, :class => "text_field"
   .field
     = f.label :bio
     %br/
-    = f.text_area :bio
+    = f.text_area :bio, :class => "text_field"
   .actions
     = f.submit "Sign up"
 = render "devise/shared/links"

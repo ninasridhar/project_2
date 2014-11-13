@@ -1,3 +1,9 @@
+-if current_user != nil
+  #user{data: {value: "#{current_user.id}"}}
+
+/ - if @subscription
+/   #subscription{data: {value: "#{@subscription}"}}
+
 = image_tag @user.user_image.thumb, :class => "userimage"
 
 .user_info
@@ -7,8 +13,15 @@
       (
       = @user.username
       )
-      - if current_user.id == @user.id
-        %p= link_to 'Edit Profile', edit_user_registration_path
+  .stars
+    - if @following == true    
+      %i.glyphicon.glyphicon-star#unfollow
+    - else 
+      %i.glyphicon.glyphicon-star#star
+  %p
+    Subscribers:
+    - @user.subscribers.each do |sub|
+      %li= sub.username
   %p
     %b About Me:
     = @user.bio
@@ -18,23 +31,27 @@
   %p
     %b Member since:
     = @user.created_at
-  %p
-    - if @user.albums != []
-      %b Albums:
-      - @user.albums.each do |album|
-        = album.name
+  - if current_user.id == @user.id
+    %p= link_to 'Edit Profile', edit_user_registration_path
 
 
+%button.albumbutton
+  Album
+%button.imagebutton
+  Images
 
 .maxwidth
-  - if @user.photos != []
-    - @user.photos.each do |photo|
-      = link_to photo do
-        = image_tag photo.uploaded_image.thumb, class: "box2"
-  / %p
-  /   %b Photos:
-  /   %br
-  /     - @user.photos.each do |photo|
-  /       = photo.name
-  /       = image_tag(photo.photo)
+  .imagesswitch  
+    - if @user.photos != []
+      - @user.photos.each do |photo|
+        = link_to photo do
+          = image_tag photo.uploaded_image.thumb, class: "box2"
+  .albumsswitch
+    - if @user.albums
+      - @user.albums.each do |album|
+        = link_to album do
+          %li= album.name
+    %p Albums are comming soon
+  
+    
   

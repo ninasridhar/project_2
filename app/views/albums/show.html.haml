@@ -1,28 +1,29 @@
 %p#notice= notice
 
-%p
-  %b Name:
-  = @album.name
-%p
-  %b Description:
-  = @album.description
-%p
-  %b User:
-  = @album.user_id
+#albumshowpage
+  .albumshowinfo
+    %h1= @album.name
+    = link_to 'Edit', edit_album_path(@album)
+    %h3 by
+    = @album.user.name
+    %p 
+      = @album.description
 
-= link_to 'Edit', edit_album_path(@album)
-\|
-= link_to 'Back', albums_path
-
-- if current_user
-  %br
-  %br
-  %input#username
-  %br
-  %textarea#comment{placeholder: 'Comments'}
-  %br
-  %i.glyphicon.glyphicon-pencil#pencil
-  #pencil2  
+  #albumsshowimages
+    - @album.photos.each do |photo|
+      = image_tag photo.uploaded_image.thumb, class: "boxI"
 %br
 
-.comment
+.albumshowcomment
+  - if current_user
+    %br
+    %br
+    %input#username.albumusername{placeholder: 'Name'}
+    %br
+    %textarea#comment.albumcomment{placeholder: 'Comments'}
+    %br
+    %i.glyphicon.glyphicon-pencil#pencil
+    #pencil2  
+  %br
+  
+.comment#comment

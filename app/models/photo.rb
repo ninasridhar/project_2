@@ -33,5 +33,4 @@ class Photo < ActiveRecord::Base
     @voted_already
   end
 
-
 end

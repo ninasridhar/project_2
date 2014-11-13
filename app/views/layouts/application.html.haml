@@ -7,8 +7,8 @@
     = csrf_meta_tags
     %script{src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDiR1gtj5ciU1-k2HbziXgNn-08PFVu48o&sensor=false&libraries=places"}
     %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css", :rel => "stylesheet"}
-    %script{:src => "/jquery.min.js", :type => "text/javascript"}
     %script{:src => "http://platform.tumblr.com/v1/share.js"}
+    %script{:src => "http://cdn.jsdelivr.net/jquery.fullpage/2.4.1/jquery.fullPage.min.js"}
     %link{:href => "http://media.tumblr.com/tumblr_lytt98aMMJ1qfo540.jpg", :rel => "shortcut icon"}
   %body
     %header
@@ -27,6 +27,8 @@
             %input{name: "q", type: "text", placeholder: "Search", :class => "searchbox"}
           %button
             = image_tag "lw.jpg", :class => "lupe"
+          %button.more
+            %p.more +
 
       .navr
         -if current_user
@@ -41,5 +43,4 @@
     %br  
     %article
       = yield
-
 /%audio_tag.speak 'assets/images/snap.wav'

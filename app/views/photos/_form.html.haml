@@ -8,17 +8,17 @@
 
   .field
     = f.label :name
-    = f.text_field :name
+    = f.text_field :name, :class => "text_field"
   .field
     = f.label :description
-    = f.text_area :description
+    = f.text_area :description, :class => "text_field"
   = f.hidden_field :user_id, :value => current_user.id
   .field
     = f.label :location
-    = f.text_field :location
+    = f.text_field :location, :class => "text_field"
   .field
     = f.label :category_id
-    = f.number_field :category_id
+    = f.number_field :category_id, :class => "text_field"
   .field
     = f.label :uploaded_image
     = f.file_field :uploaded_image
