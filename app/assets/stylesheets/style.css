@@ -515,8 +515,8 @@ p a:hover{
 }
 
 #map_page{
-	width: 80%;
-	height: 60%;
+	width: 100%;
+	height: auto;
 	margin: 0 auto;
 }
 
@@ -525,10 +525,14 @@ p a:hover{
 }
 
 #map_canvas{
-	margin-left: 23%;
-	margin-top: 5%;
-	border: 10px solid;
-	border-radius: 10%;
+	margin-top: 2%;
+	width: 100%;
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
 }
 
-
+#searchbox{
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%
+}

@@ -19,7 +19,6 @@
   .field
     = f.label :category_id
     = f.collection_select(:category_id, Category.all, :id, :name)
-
   .field
     = f.label :album
     - current_user.albums.all.each do |album|

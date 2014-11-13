@@ -56,6 +56,8 @@ ActiveRecord::Schema.define(:version => 20141110160057) do
     t.string   "location"
     t.integer  "category_id"
     t.text     "photo_link"
+    t.string   "latitude"
+    t.string   "longitude"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
     t.string   "upload_image"
