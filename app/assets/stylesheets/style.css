@@ -183,6 +183,13 @@ a{
 	height: auto;
 }
 
+.boxIII{
+	float: left;
+	width: 25%;
+	height: auto;
+	margin-bottom: 10%;
+}
+
 .boxI img{
 	width: 100%;
 	-webkit-transition: all 1s ease;
@@ -206,10 +213,11 @@ a{
 	width: 35%;
 	float: left;
 	border-radius: 100%;
-	margin-left: 2%
+	margin-left: 2%;
+	margin-right: 13%;
 }
 
-ul h5 {
+ul h5{
 	background: black;
 	color: white;
 	width: 103%;
@@ -217,8 +225,28 @@ ul h5 {
 	padding: 0.5%;
 	padding-left: 3%;
 	margin-left: -3%;
-
 }
+
+ul h5.profile{
+	background: black;
+	color: white;
+	width: 103%;
+	float: none;
+	padding: 0.5%;
+	padding-left: 3%;
+	margin-left: -3%;
+	clear: both;
+}
+
+/*ul h6{
+	background: black;
+	color: white;
+	width: 103%;
+	float: left;
+	padding: 0.5%;
+	padding-left: 3%;
+	margin-left: -3%;
+}*/
 
 ul p { 
 	display:none;
@@ -377,13 +405,13 @@ p a:hover{
 	color: red
 }
 
-.albumsswitch{
+/*.albumsswitch{
 	visibility: hidden
 }
 
 .imagesswitch{
 	visibility: visible;
-}
+}*/
 
 .footer{
 	width: 100%;
@@ -607,7 +635,16 @@ p a:hover{
 
 .formcentre.actions input{
 	color:red;
+}
+
+.albumshowboxes{
+	/*margin-bottom: 10%;*/
+}
+
+#useralbumindeximage{
 
 }
 
-
+#useralbumindextext{
+	
+}

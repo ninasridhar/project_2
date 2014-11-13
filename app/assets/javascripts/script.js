@@ -15,16 +15,16 @@ $(document).ready(function(){
     });
 
 
-    $(".albumbutton").click(function () {
-        console.log('YO!')
-        $(".albumsswitch").toggle("fast");
-        $(".imagesswitch").slideToggle("fast");
-    });
-    $(".imagebutton").click(function () {
-        console.log('YO!')
-        $(".imagesswitch").toggle("fast");
-        $(".albumsswitch").slideToggle("fast");
-    });
+    // $(".albumbutton").click(function () {
+        // console.log('YO!')
+        // $(".albumsswitch").toggle("fast");
+        // $(".imagesswitch").slideToggle("fast");
+    // });
+    
+    // $(".imagebutton").click(function () {
+        // $(".imagesswitch").toggle("fast");
+        // $(".albumsswitch").slideToggle("fast");
+    // });
 
 
 
