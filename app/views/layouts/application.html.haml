@@ -18,8 +18,12 @@
 
       -if current_user
         =link_to 'Locations', locations_path, :class => "nav"
-        =link_to 'Albums', albums_path, :class => "nav"
-        =link_to 'Photos', photos_path, :class => "nav"
+        - if current_user.subscribed_to != []
+          =link_to 'Albums', albums_path, :class => "nav"
+        - if current_user.subscribed_to != []
+          =link_to 'Photos', feed_path, :class => "nav"
+        - else 
+          =link_to 'Photos', photos_path, :class => "nav"
         =link_to 'Categories', categories_path, :class => "nav"
         =link_to 'Upload', new_photo_path, :class => "nav"
         .searchbar

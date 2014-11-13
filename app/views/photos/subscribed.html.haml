@@ -1,0 +1,9 @@
+- current_user.subscribed_to.each do |s|
+  - s.photos.each do |p|
+    .boxI
+      = image_tag p.uploaded_image.thumb
+      / %h6
+      /   %span
+      /     = p.name
+      /     %br
+      /     = p.user.name

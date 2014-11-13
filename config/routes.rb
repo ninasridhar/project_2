@@ -38,6 +38,7 @@ Project2::Application.routes.draw do
 
   get '/search', to: "search#index"
 
+  get '/feed', to: "photos#subscribed"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
