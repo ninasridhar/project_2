@@ -36,15 +36,15 @@ $(document).ready(function(){
     $(".accordion img").not($(this).next()).slideUp();
     });
 
-    $('li ul').hide().removeClass('fallback');
-    $('li').hover(
-        function () {
-    $('ul', this).stop().slideDown(100);
-        },
-        function () {
-    $('ul', this).stop().slideUp(100);
-        }
-    );
+    //$('li ul').hide().removeClass('fallback');
+    //$('li').hover(
+    //    function () {
+    //$('ul', this).stop().slideDown(1000);
+    //    },
+    //    function () {
+    //$('ul', this).stop().slideUp(1000);
+    //    }
+    //);
 });
 
 

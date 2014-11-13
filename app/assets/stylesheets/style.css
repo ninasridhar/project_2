@@ -104,7 +104,7 @@ a.categorybox{
 		display: none;
 		border: 0px;
 		height: 55px;
-		width: 300px;
+		width: 200px;
 		font-weight: 100
 }
 
@@ -235,7 +235,8 @@ ul img:hover{
 }
 
 ul li{
-	list-style: none
+	list-style: none;
+
 }
 
 a:hover{
@@ -383,7 +384,7 @@ p a:hover{
 }
 
 
-@media (max-width: 915px){
+@media (max-width: 1100px){
 	.nav{
 		font-size: 15px;
 		line-height: 6.5
@@ -409,7 +410,7 @@ p a:hover{
 	}
 }
 
-@media (max-width: 650px){
+@media (max-width: 750px){
 	.icon{
 		height: 80px;
 		width: auto;
@@ -427,7 +428,7 @@ p a:hover{
 		width: 100%
 	}
 	.navr{
-		font-size: 10px
+		font-size: 5px
 	}
 	.user_info{
 		float: none;
@@ -457,7 +458,8 @@ p a:hover{
 		color: red
 	}
 	.nav{
-		margin-right: 1px
+		margin-right: 1px;
+		font-size: 10px;
 	}
 	.searchbox{
 		width: 20px;
@@ -532,6 +534,20 @@ p a:hover{
 }
 
 .navdown{
-	float: left;
-	display: block; 
+	display: block;
+	background-color: green;
+	width: 10%;
+	position: absolute;
+}
+
+.fallback{
+	position: absolute;
+	top: 100px;
+	left: 45%;
+	display: block;
+	height: 18px;
+	padding-top: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 }
