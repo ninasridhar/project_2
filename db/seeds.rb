@@ -68,25 +68,23 @@ p20 = Photo.create(name: 'Girl', description: 'Lorem ipsum dolor sit amet, conse
 
 p21 = Photo.create(name: 'Strange Guy', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/guy.jpg')), user_id: 3, location: 'Beijing', category_id: 4)
 
-p22 = Photo.create(name: 'Lake', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lake.jpg')), user_id: 1, location: 'London', category_id: 1)
+p22 = Photo.create(name: 'Lake', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lake.jpg')), user_id: 15, location: 'Montreal', category_id: 20)
 
-p23 = Photo.create(name: 'Lions', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lionwithcub.jpg')), user_id: 1, location: 'London', category_id: 1)
+p23 = Photo.create(name: 'Lions', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lionwithcub.jpg')), user_id: 15, location: 'Sao Paolo', category_id: 7)
 
-p24 = Photo.create(name: 'Green Mountain', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/mountain.jpg')), user_id: 1, location: 'London', category_id: 1)
+p24 = Photo.create(name: 'Green Mountain', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/mountain.jpg')), user_id: 8, location: 'Budapest', category_id: 19)
 
-p25 = Photo.create(name: 'Lake and Mountains', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/mountainlake.jpg')), user_id: 1, location: 'London', category_id: 1)
+p25 = Photo.create(name: 'Lake and Mountains', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/mountainlake.jpg')), user_id: 8, location: 'Honululu', category_id: 10)
 
-p26 = Photo.create(name: 'Piano', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/music.jpg')), user_id: 1, location: 'London', category_id: 1)
+p26 = Photo.create(name: 'Piano', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/music.jpg')), user_id: 12, location: 'Tokyo', category_id: 12)
 
-p27 = Photo.create(name: 'Nasa I', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/nasa.jpg')), user_id: 1, location: 'London', category_id: 1)
+p27 = Photo.create(name: 'Nasa I', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/nasa.jpg')), user_id: 3, location: 'Kennedy Space Center', category_id: 16)
 
-p28 = Photo.create(name: 'Pumpkinfield', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/pumpkin.jpg')), user_id: 1, location: 'London', category_id: 1)
+p28 = Photo.create(name: 'Pumpkinfield', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/pumpkin.jpg')), user_id: 14, location: 'Little Rock', category_id: 14)
 
-p29 = Photo.create(name: 'Rhinos', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/rhinos.jpg')), user_id: 1, location: 'London', category_id: 1)
+p31 = Photo.create(name: 'Cats', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/sometypeofcats.jpg')), user_id: 15, location: 'Broadway', category_id: 8)
 
-p30 = Photo.create(name: 'Cats', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/sometypeofcats.jpg')), user_id: 1, location: 'London', category_id: 1)
-
-p31 = Photo.create(name: 'Tiger', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/tiger.jpg')), user_id: 1, location: 'London', category_id: 1)
+p32 = Photo.create(name: 'Tiger', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/tiger.jpg')), user_id: 7, location: 'Djibouti', category_id: 13)
 
 
 v1 = Vote.create(photo_id: 1, number_of_votes: 0)
@@ -98,7 +96,24 @@ v6 = Vote.create(photo_id: 6, number_of_votes: 0)
 v7 = Vote.create(photo_id: 7, number_of_votes: 4)
 v8 = Vote.create(photo_id: 8, number_of_votes: 12)
 v9 = Vote.create(photo_id: 9, number_of_votes: 3)
-v10 = Vote.create(photo_id: 10, number_of_votes: 1)
+v10 = Vote.create(photo_id: 10, number_of_votes: 4)
+v11 = Vote.create(photo_id: 11, number_of_votes: -20)
+v12 = Vote.create(photo_id: 12, number_of_votes: 3)
+v13 = Vote.create(photo_id: 13, number_of_votes: 13)
+v14 = Vote.create(photo_id: 14, number_of_votes: 34)
+v15 = Vote.create(photo_id: 15, number_of_votes: 54)
+v16 = Vote.create(photo_id: 16, number_of_votes: -3)
+v17 = Vote.create(photo_id: 17, number_of_votes: 0)
+v18 = Vote.create(photo_id: 18, number_of_votes: 23)
+v19 = Vote.create(photo_id: 19, number_of_votes: 2)
+v20 = Vote.create(photo_id: 20, number_of_votes: 1)
+v21 = Vote.create(photo_id: 21, number_of_votes: 3)
+v22 = Vote.create(photo_id: 22, number_of_votes: -34)
+v23 = Vote.create(photo_id: 23, number_of_votes: 4)
+v24 = Vote.create(photo_id: 24, number_of_votes: 2)
+v25 = Vote.create(photo_id: 25, number_of_votes: 3)
+v26 = Vote.create(photo_id: 26, number_of_votes: 5)
+v27 = Vote.create(photo_id: 27, number_of_votes: 3)
 
 a1 = Album.create(name:'Animals In The Zoo', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', user_id: 1)
 
