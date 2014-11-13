@@ -14,6 +14,8 @@ class User < ActiveRecord::Base
   has_many :votes
   has_many :subscriptions, foreign_key: :user1_id
   has_many :subscribers, through: :subscriptions, source: :user2
+  has_many :subscriptions, foreign_key: :user2_id
+  has_many :subscribed_to, through: :subscriptions, source: :user1
   mount_uploader :user_image, AvatarImageUploader
   devise :omniauthable, :omniauth_providers => [:google_oauth2]
 

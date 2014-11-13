@@ -38,7 +38,7 @@ Project2::Application.routes.draw do
 
   get '/search', to: "search#index"
 
-  devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks" }
+  get '/feed', to: "photos#subscribed"
 
 
   # The priority is based upon order of creation:

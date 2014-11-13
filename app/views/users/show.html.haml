@@ -13,15 +13,17 @@
       (
       = @user.username
       )
-  .stars
-    - if @following == true    
-      %i.glyphicon.glyphicon-star#unfollow
-    - else 
-      %i.glyphicon.glyphicon-star#star
+  - if @user.id != current_user.id
+    .stars
+      - if @following == true    
+        %i.glyphicon.glyphicon-star#unfollow
+      - else 
+        %i.glyphicon.glyphicon-star#star
   %p
-    Subscribers:
-    - @user.subscribers.each do |sub|
-      %li= sub.username
+    - if @user.subscribers != []  
+      Subscribers:
+      - @user.subscribers.each do |sub|
+        %li= sub.username
   %p
     %b About Me:
     = @user.bio
@@ -30,7 +32,7 @@
     = @user.hometown
   %p
     %b Member since:
-    = @user.created_at
+    = @user.created_at.strftime("%a %d %B %Y")
   - if current_user.id == @user.id
     %p= link_to 'Edit Profile', edit_user_registration_path
 
