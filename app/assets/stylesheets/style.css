@@ -1,7 +1,10 @@
+*{
+	font-weight: 200;
+}
+
 body{
 	margin: 0;
 }
-
 
 header{
 	background: black;
@@ -94,6 +97,10 @@ a.categorybox{
 	margin-right: 3%
 }
 
+.user_info h1{
+	font-weight: 100;
+}
+
 .searchbox{
 		float: left;
 		background: rgba(0,0,0,0);
@@ -158,6 +165,7 @@ button{
 	margin-left: 5%;
 	margin-bottom: 1.5%;
 	font-size: 40px;
+	font-weight: 100;
 }
 
 a{
@@ -292,6 +300,10 @@ a.twitter-share-button {
 	width: 40%;
 	height: auto;
 	margin-left: 5%;
+}
+
+.photoinfo p{
+	font-weight: 100;
 }
 
 .votes{
@@ -531,4 +543,37 @@ p a:hover{
 	border-radius: 10%;
 }
 
+.formcentre{
+	width: 400px;
+	margin: 0 auto;
+}
+.formcentre a{
+	color: red;
+	font-size: 20px;
+}
 
+.formcentre a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+.formcentre h1{
+	color: black;
+	font-weight: 100;
+}
+
+.formcentre h2{
+	color: red;
+	font-weight: 100;
+}
+
+.formcentre input{
+	width: 400px;
+}
+.formcentre textarea{
+	width: 400px;
+}
+
+.formcentre.actions input{
+	color:red;
+}

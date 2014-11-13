@@ -68,16 +68,19 @@
 
 h6 { 
    position: absolute; 
-   top: 200px; 
+   top: 20px; 
    left: 0; 
    width: 100%; 
+   font-weight: 200;
 }
 
 h6 span { 
+   width: 100%;
    color: white; 
-   font: bold 24px/45px Helvetica, Sans-Serif; 
+   font: 24px/45px Helvetica, Sans-Serif; 
+   font-weight: 100;
    letter-spacing: -1px;  
    // background: rgb(0, 0, 0); fallback color
-   // background: rgba(0, 0, 0, 0.7);
-   padding: 10px; 
+   background: rgba(0, 0, 0, 0.7);
+   padding: 9px; 
 }
