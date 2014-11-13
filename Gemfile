@@ -8,6 +8,7 @@ gem 'rails', '3.2.19'
 gem 'pg'
 gem 'haml-rails'
 gem 'devise'
+gem 'geocoder'
 
 group :test do
   gem 'rspec-rails', "~> 2.14.2"
@@ -30,6 +31,7 @@ gem 'ransack'
 gem 'cancancan', '~> 1.9'
 gem 'bourbon'
 gem 'simple_hashtag'
+gem 'omniauth-google-oauth2'
 
 # Gems used only for assets and not required
 # in production environments by default.

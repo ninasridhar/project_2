@@ -1,5 +1,6 @@
 Project2::Application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks" }
+
 
   resources :subscriptions
 
@@ -38,7 +39,9 @@ Project2::Application.routes.draw do
 
   get '/search', to: "search#index"
 
+  get '/feed', to: "photos#subscribed"
 
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

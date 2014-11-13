@@ -1,6 +1,6 @@
 class Photo < ActiveRecord::Base
 
-  attr_accessible :album_id, :category_id, :description, :location_id, :name, :user_id, :album_id, :location, :category_id, :photo_link, :uploaded_image, :votes
+  attr_accessible :album_id, :category_id, :description, :location_id, :name, :user_id, :album_ids, :location, :category_id, :photo_link, :uploaded_image, :votes
 
 
   has_many :votes
@@ -10,6 +10,8 @@ class Photo < ActiveRecord::Base
   has_and_belongs_to_many :tags
   has_and_belongs_to_many :albums
 
+  geocoded_by :location
+  after_validation :geocode, :if => :location_changed?
 
   mount_uploader :uploaded_image, ImageUploaderUploader
 

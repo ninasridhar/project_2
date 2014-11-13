@@ -1,34 +1,35 @@
-%h1 Search results
+.formcentre
+  %h1 Search results
 
-- if @users.present?
+  - if @users.present?
 
-  - @users.each do |user|
-    = link_to(user.name, user_path(user))
- 
-- elsif @tags.present?
-
-  - @tags.each do |tag|
-    = link_to(tag.name, tag_path(tag))
+    - @users.each do |user|
+      = link_to(user.name, user_path(user))
+      %br
    
-- elsif @categories.present?
+  - elsif @tags.present?
 
-  - @categories.each do |category|
-    = link_to(category.name, category_path(category))
+    - @tags.each do |tag|
+      = link_to(tag.name, tag_path(tag))
+      %br
+     
+  - elsif @categories.present?
 
-- elsif @albums.present?
+    - @categories.each do |category|
+      = link_to(category.name, category_path(category))
+      %br
 
-  - @albums.each do |album|
-    = link_to(album.name, album_path(album))
+  - elsif @albums.present?
 
-- elsif @photos.present?
+    - @albums.each do |album|
+      = link_to(album.name, album_path(album))
+      %br
 
-  - @photos.each do |photo|
-    = link_to(photo.name, photo_path(photo))
+  - elsif @photos.present?
 
-- elsif @locations.present?
+    - @photos.each do |photo|
+      = link_to(photo.name, photo_path(photo))
+      %br
 
-  - @locations.each do |location|
-    = link_to(location.city, location_path(location)) 
-
-- else 
-  %h1 Nothing matches what you searched for, please try again
+  - else 
+    %h2 Nothing matches what you searched for, please try again

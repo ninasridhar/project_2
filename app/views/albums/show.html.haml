@@ -3,7 +3,8 @@
 #albumshowpage
   .albumshowinfo
     %h1= @album.name
-    = link_to 'Edit', edit_album_path(@album)
+    - if @album.user_id == current_user.id
+      = link_to 'Edit', edit_album_path(@album)
     %h3 by
     = @album.user.name
     %p 
@@ -16,9 +17,6 @@
 
 .albumshowcomment
   - if current_user
-    %br
-    %br
-    %input#username.albumusername{placeholder: 'Name'}
     %br
     %textarea#comment.albumcomment{placeholder: 'Comments'}
     %br

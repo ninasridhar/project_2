@@ -5,21 +5,7 @@ class LocationsController < ApplicationController
   def index
     @locations = Location.all
     
-    @photos = Photo.all 
-    # @images = []
-    # @places = []
-    @results = {}
-    @photos.each do |p|
-      @results[p.location] = {
-        image: p.uploaded_image
-        # id: p.id
-      }
-    @results
-    end
-    
-    # @locationofphotos = {}
-    # @locationofphotos = images.zip(places)
-    # binding.pry
+    @photos = Photo.all
 
     respond_to do |format|
       format.html # index.html.erb

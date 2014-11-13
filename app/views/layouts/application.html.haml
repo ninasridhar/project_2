@@ -15,13 +15,17 @@
       %h1 Snap
       =link_to image_tag('icon.png', :class => "icon"), root_path
       /%button.buttonsmall
-
       -if current_user
         =link_to 'Locations', locations_path, :class => "nav"
-        =link_to 'Albums', albums_path, :class => "nav"
-        =link_to 'Photos', photos_path, :class => "nav"
+        - if current_user.subscribed_to != []
+          =link_to 'Album Feed', albums_path, :class => "nav"
+        - if current_user.subscribed_to != []
+          =link_to 'Photo Feed', feed_path, :class => "nav"
+        - else 
+          =link_to 'Top 12', photos_path, :class => "nav"
         =link_to 'Categories', categories_path, :class => "nav"
-        =link_to 'Upload', new_photo_path, :class => "nav"
+        =link_to 'Photo', new_photo_path, :class => "nav"
+        =link_to 'Album', new_album_path, :class => "nav"
         .searchbar
           %form{action: "/search", method: :get, :class => "searchbox"}
             %input{name: "q", type: "text", placeholder: "Search", :class => "searchbox"}

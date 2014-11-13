@@ -1,9 +1,11 @@
 %p#notice= notice
 -if current_user != nil
   #user{data: {value: "#{current_user.id}"}} 
-%p.titlephoto
+%h1.titlephoto
   = @photo.name
-  = link_to '| Edit', edit_photo_path(@photo)
+  - if @photo.user_id == current_user.id 
+    = link_to 'Edit', edit_photo_path(@photo)
+    = link_to '| Delete', @photo, :method => :delete, :data => { :confirm => 'Are you sure?' }
 %p
   = image_tag @photo.uploaded_image.url, class: "photo-show", id: 'votes'
 
@@ -28,7 +30,7 @@
     = @photo.user.name
   %p 
     %b Added On:
-    = @photo.created_at
+    = @photo.created_at.strftime("%a %d %B %Y")
   %p
     %b Albums:
     - @photo.albums.each do |album|
@@ -45,14 +47,10 @@
   .commentbox
     - if current_user
       %br
-      %br
-      %input#username{placeholder: 'Name'}
-      %br
       %textarea#comment{placeholder: 'What do   you think?'}
       %br
       %i.glyphicon.glyphicon-pencil#pencil
       #pencil2  
-    %br
     
 .comment#commentphoto
 

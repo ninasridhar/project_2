@@ -9,6 +9,8 @@ class CreatePhotos < ActiveRecord::Migration
       t.string :location
       t.integer :category_id
       t.text :photo_link
+      t.string :latitude
+      t.string :longitude
 
       t.timestamps
     end
