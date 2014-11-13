@@ -130,41 +130,35 @@ c4 = Category.create(name: 'Nature')
 
 c5 = Category.create(name: 'Fashion')
 
-c6 = Category.create(name: 'Architecture')
+c6 = Category.create(name: 'Animals')
 
-c7 = Category.create(name: 'Architecture')
+c7 = Category.create(name: 'People')
 
-c8 = Category.create(name: 'Architecture')
+c8 = Category.create(name: 'Orange')
 
-c9 = Category.create(name: 'Architecture')
+c9 = Category.create(name: 'Books')
 
-c10 = Category.create(name: 'Architecture')
+c10 = Category.create(name: 'Beer')
 
-c11 = Category.create(name: 'Architecture')
+c11 = Category.create(name: 'Alcohol')
 
-c12 = Category.create(name: 'Architecture')
+c12 = Category.create(name: 'Water')
 
-c13 = Category.create(name: 'Architecture')
+c13 = Category.create(name: 'Chair')
 
-c14 = Category.create(name: 'Architecture')
+c14 = Category.create(name: 'Name')
 
-c15 = Category.create(name: 'Architecture')
+c15 = Category.create(name: 'Pixar')
 
-c16 = Category.create(name: 'Architecture')
+c16 = Category.create(name: 'Bottles')
 
-c17 = Category.create(name: 'Architecture')
+c17 = Category.create(name: 'Bike')
 
-c18 = Category.create(name: 'Architecture')
+c18 = Category.create(name: 'Car')
 
-c19 = Category.create(name: 'Architecture')
+c19 = Category.create(name: 'TicTac')
 
-c20 = Category.create(name: 'Architecture')
-
-c1 = Category.create(name: 'Architecture')
-
-c1 = Category.create(name: 'Architecture')
-
-c1 = Category.create(name: 'Architecture')
+c20 = Category.create(name: 'MacBook')
 
 
 p1.albums  = [a1]

@@ -31,8 +31,7 @@ mapApp.setEventListeners = function(){
       console.log(marker);
       marker.info.open(map, marker);
     });
-  })
-  
+  })  
 }
 
 
