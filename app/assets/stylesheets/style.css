@@ -202,6 +202,31 @@ a{
 
 }
 
+.albumstile{
+	float: left;
+	width: 50%;
+	height: auto;
+}
+
+.albumstile img{
+	width: 100%;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.albumstile img:hover{
+	filter: grayscale(50%);
+	-webkit-filter: grayscale(50%);
+	-moz-filter: grayscale(50%);
+	filter: grayscale(50%);
+	filter: gray;
+	-webkit-filter: grayscale(.5);
+
+}
+
 .userimage{
 	width: 35%;
 	float: left;
@@ -484,13 +509,13 @@ p a:hover{
 	height: auto;
 	margin-top: 5%;
 	text-align: center;
-	width: 50%;
+	width: 33.3%;
 	float: left;
 }
 
 #albumindeximage img{
 	border-radius: 100%;
-	width: 50%;
+	width: 90%;
 }
 
 .albumshowcomment{
@@ -508,6 +533,15 @@ p a:hover{
 
 .albumusername{
 	width: 10%
+}
+
+#albumindextext a{
+	text-decoration: none;
+	color: red;
+}
+
+#albumindextext a:hover{
+	color: black;
 }
 
 #albumshowpage{
