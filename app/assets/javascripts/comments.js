@@ -11,7 +11,6 @@ ajaxComments.getComments = function(event){
   }).success(function(data){
     $('.comment').html('');
     $.each(data, function(index, item){
-      console.log(item, index)
       if ((item.multi_type === multitype)&(item.multi_id === itemId)){
         $('.comment').append("<tr><td><b>"+ item.user_name +"</b></td></tr><tr><td>"+ item.comments +"</td></tr>")
       }
