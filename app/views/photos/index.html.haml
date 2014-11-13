@@ -1,13 +1,12 @@
-%h1 The Top 12
+%h1.headline The Top 12
 - @sorted.each do |p|
   = link_to p do
     .boxI.imagetext
       .imageblur
         = image_tag p.uploaded_image.thumb
       %h6
-        %span
-          = p.name 
+        %span.hovername
+          = p.name
           %br
           by 
           = p.user.name
-      
