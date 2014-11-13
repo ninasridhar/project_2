@@ -1,7 +1,7 @@
 %p#notice= notice
 -if current_user != nil
   #user{data: {value: "#{current_user.id}"}} 
-%p.titlephoto
+%h1.titlephoto
   = @photo.name
   - if @photo.user_id == current_user.id 
     = link_to 'Edit', edit_photo_path(@photo)

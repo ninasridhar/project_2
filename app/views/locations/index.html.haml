@@ -5,7 +5,8 @@
   %input#searchbox.form-control{:placeholder => "Search", :type => "text"}
   #map_canvas
 
-%input#places{type: "hidden", value: "#{@results.to_json}"}
+%input#places{type: "hidden", value: "#{@photos.to_json}"}
 %input#imagesfromlocation{type: "hidden", value: "#{@images.to_json}"}
 %input#hometown{type: "hidden", value: "#{current_user.hometown.to_json}"}
 %br/
+ 
