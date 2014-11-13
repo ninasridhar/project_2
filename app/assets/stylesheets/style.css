@@ -310,7 +310,7 @@ ul li{
 	list-style: none
 }
 
-a:hover{
+nav a:hover{
 	color: red;
 }
 
@@ -443,6 +443,15 @@ p a:hover{
 	margin-left: -3%;
 }
 
+
+/*.albumsswitch{
+>>>>>>> development
+	visibility: hidden
+}
+
+.imagesswitch{
+	visibility: visible;
+}*/
 
 .footer{
 	width: 100%;
