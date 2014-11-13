@@ -7,15 +7,15 @@
 /         %h1= link_to(album.name, album_path(album))
 /         %h4= "By"
 /         %h3= link_to(album.user.name, user_path(album.user))
-%ul#navalbumsindex
-  - current_user.subscribed_to.each do |s|
-    - s.albums.each do |album|
-      %li
-        #albumindeximage
-          = image_tag album.photos.sample.uploaded_image.thumb
-        #albumindextext
-          %h1= link_to(album.name, album_path(album))
-          %h4= "By"
-          %h3= link_to(album.user.name, user_path(album.user))
+- current_user.subscribed_to.each do |s|
+  - s.albums.each do |album|
+    .albumstile.imagetext
+      = link_to album do
+        = image_tag album.photos.sample.uploaded_image.thumb
+      %h6
+        %span
+          = album.name
+          %br
+          = album.user.name
 
 
