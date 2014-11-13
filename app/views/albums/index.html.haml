@@ -2,7 +2,7 @@
   - @albums.each do |album|
     %li
       #albumindeximage
-        = image_tag album.photos.sample.uploaded_image.thumb
+        = image_tag album.photos.sample.uploaded_image.thumb, :class => "albumfrontimage"
       #albumindextext
         %h1= link_to(album.name, album_path(album))
         %h4= "By"

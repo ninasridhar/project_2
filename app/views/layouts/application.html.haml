@@ -14,7 +14,6 @@
     %header
       %h1 Snap
       =link_to image_tag('icon.png', :class => "icon"), root_path
-      /%button.buttonsmall
 
       -if current_user
         =link_to 'Locations', locations_path, :class => "nav"
@@ -43,4 +42,3 @@
     %br  
     %article
       = yield
-/%audio_tag.speak 'assets/images/snap.wav'

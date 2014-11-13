@@ -319,7 +319,6 @@ a.twitter-share-button {
 #comment{
 	width: 100%;
 	color: black;
-	padding: 0.5%
 }
 
 .comment{
@@ -500,12 +499,12 @@ p a:hover{
 	margin-left: 3%
 }
 
-.comment{
-	float: left;
-	margin-left: 3%
-}
 
 .albumcomment{
 	border: solid black 2px;
 	width: 50%;
+}
+
+.commentcomment{
+	border: solid black 2px
 }
