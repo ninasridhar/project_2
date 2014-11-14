@@ -126,6 +126,28 @@ a4 = Album.create(name:'Trip To New Zealand', description: 'Lorem ipsum dolor si
 
 a5 = Album.create(name:'Asian History', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', user_id: 5)
 
+a6 = Album.create(name:'2014 Summer', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', user_id: 6)
+
+a7 = Album.create(name:'Family Times', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', user_id: 7)
+
+a8 = Album.create(name:'Birthday', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', user_id: 2)
+
+a9 = Album.create(name:'Pictures of Food', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', user_id: 9)
+
+a10 = Album.create(name:'Ski Trip', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', user_id: 10)
+
+a11 = Album.create(name:'Holiday', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', user_id: 1)
+
+a12 = Album.create(name:'Day Out at the Park', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', user_id: 12)
+
+a13 = Album.create(name:'Messing Around', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', user_id: 2)
+
+a14 = Album.create(name:'Night Out', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', user_id: 14)
+
+a15 = Album.create(name:'Photos from my phone', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', user_id: 3)
+
+a16 = Album.create(name:'Football Match', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', user_id: 3)
+
 l1 = Location.create(city: 'New York', country: 'USA')
 
 l2 = Location.create(city: 'Hamburg', country: 'Germany')
@@ -177,11 +199,20 @@ c19 = Category.create(name: 'TicTac')
 c20 = Category.create(name: 'MacBook')
 
 
-p1.albums  = [a1, a2, a3]
-p2.albums  = [a2, a4]
-p3.albums  = [a3]
-p4.albums  = [a4]
-p5.albums  = [a1, a5]
+a1.photos  = [p1, p2, p3]
+a14.photos  = [p2, p4]
+a3.photos  = [p3, p4, p7, p10, p8, p15]
+a4.photos  = [p4, p22, p26]
+a5.photos  = [p1, p11, p12, p13]
+a6.photos  = [p14, p15, p16, p17]
+a7.photos  = [p18, p25, p26, p27]
+a8.photos  = [p19, p25, p20]
+a9.photos  = [p20, p21, p22, p24]
+a10.photos  = [p11, p15, p27, p28]
+a11.photos  = [p1, p15, p24, p27]
+a12.photos  = [p1, p5]
+a13.photos  = [p1, p6, p9, p8]
+a15.photos  = [p3, p27]
 
 # p1.votes  = [v1]
 # p2.votes  = [v2]
