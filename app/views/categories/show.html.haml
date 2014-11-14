@@ -1,9 +1,17 @@
 %p#notice= notice
 
-%p
-  %b Name:
-  = @category.name
-
-= link_to 'Edit', edit_category_path(@category)
-\|
-= link_to 'Back', categories_path
+.formcentre
+  %h1= @category.name
+-if @category.photos != []
+  - @category.photos.each do |p|
+    = link_to p do
+      .boxI.imagetext
+        .imageblur
+          = image_tag p.uploaded_image.thumb
+- else 
+  .formcentre
+    %h2 
+      Sorry, there aren't any photos tagged
+      = @category.name
+      yet.
+    = link_to "Add one here", new_photo_path
