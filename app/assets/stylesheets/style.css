@@ -242,24 +242,22 @@ a{
 	margin-right: 13%;
 }
 
-<<<<<<< HEAD
+
 ul h5 {
 	color: black;
-=======
-ul h5{
-	background: black;
-	color: white;
->>>>>>> development
 	width: 103%;
 	float: none;
 	padding: 0.5%;
 	padding-left: 6%;
 	margin-left: -3%;
-<<<<<<< HEAD
-	text-decoration: underline;
-=======
+
+/*	text-decoration: underline;*/
 }
->>>>>>> development
+
+ul h5:hover{
+	color: white;
+	background: black;
+}
 
 ul h5.profile{
 	background: black;
@@ -381,7 +379,7 @@ a.twitter-share-button {
 
 .commentbox{
 	width: 45%;
-	margin-left: 5%;
+	margin-left: 10%;
 	float: left;
 }
 
@@ -406,7 +404,7 @@ a.twitter-share-button {
 .comment{
 	float: right;
 	width: 50%;
-	padding: 3%
+	margin-left: 20%
 }
 
 header > a:hover {
@@ -563,7 +561,7 @@ p a:hover{
 
 .albumshowcomment{
 	width: 45%;
-	margin-left: 3%;
+	margin-left: 20%;
 	margin-top: 3%;
 	height: auto;
 }
@@ -592,13 +590,15 @@ p a:hover{
 }
 
 .albumshowinfo{
+	width: 50%;
 	height: auto;
-	margin-left: 3%
+	margin-left: 20%
 }
 
 .comment{
 	float: left;
-	margin-left: 3%
+	margin-left: 5%;
+	width: 40%;
 }
 
 .albumcomment{

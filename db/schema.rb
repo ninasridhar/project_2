@@ -32,6 +32,11 @@ ActiveRecord::Schema.define(:version => 20141113143110) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "categories_photos", :id => false, :force => true do |t|
+    t.integer "category_id"
+    t.integer "photo_id"
+  end
+
   create_table "comments", :force => true do |t|
     t.integer  "user_id"
     t.integer  "multi_id"
@@ -54,7 +59,6 @@ ActiveRecord::Schema.define(:version => 20141113143110) do
     t.text     "photo"
     t.integer  "user_id"
     t.string   "location"
-    t.integer  "category_id"
     t.text     "photo_link"
     t.string   "latitude"
     t.string   "longitude"
@@ -62,11 +66,6 @@ ActiveRecord::Schema.define(:version => 20141113143110) do
     t.datetime "updated_at",     :null => false
     t.string   "upload_image"
     t.string   "uploaded_image"
-  end
-
-  create_table "photos_tags", :id => false, :force => true do |t|
-    t.integer "photo_id"
-    t.integer "tag_id"
   end
 
   create_table "subscriptions", :force => true do |t|

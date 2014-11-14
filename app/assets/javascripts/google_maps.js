@@ -18,8 +18,6 @@ mapApp.initialize = function(){
   var input = $('#searchbox')[0];
   searchBox = new google.maps.places.SearchBox(input);
 
-  var hometown = document.getElementById('hometown').value;
-  homecity = eval('(' + hometown + ')')
   google.maps.event.addListener(searchBox, 'places_changed', function(){
     mapApp.searchBox();
   })
@@ -28,7 +26,6 @@ mapApp.initialize = function(){
 mapApp.setEventListeners = function(){
   $.each(markers, function(index, marker){
     google.maps.event.addListener(marker, 'click', function() {
-      console.log(marker);
       marker.info.open(map, marker);
     });
   })  
@@ -46,8 +43,9 @@ mapApp.codeAddress = function(){
       position: position
     });
     bounds.extend(position);
+    var id = value.id
     var imageUrl = value.uploaded_image.url
-    var contentImage = "<img class='boxII' src='" + imageUrl + "'/>";
+    var contentImage = "<a href='/photos/ " +id +"'><img class='boxII' src='" + imageUrl + "'/></a>"; 
     var info = new google.maps.InfoWindow({
       content: contentImage
     });

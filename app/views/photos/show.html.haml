@@ -6,9 +6,10 @@
   by
   =link_to @photo.user.name, @photo.user
 
-  - if @photo.user_id == current_user.id 
-    = link_to 'Edit', edit_photo_path(@photo)
-    = link_to '| Delete', @photo, :method => :delete, :data => { :confirm => 'Are you sure?' }
+  - if current_user
+    - if @photo.user_id == current_user.id 
+      = link_to 'Edit', edit_photo_path(@photo)
+      = link_to '| Delete', @photo, :method => :delete, :data => { :confirm => 'Are you sure?' }
 %p
   = image_tag @photo.uploaded_image.url, class: "photo-show", id: 'votes'
 
@@ -16,10 +17,11 @@
   Likes:
   .no_votes
     = @votes
-  - if @voted_already != true
-    .thumbs
-      %i.glyphicon.glyphicon-thumbs-up#up{data: { vote: 1}}
-      %i.glyphicon.glyphicon-thumbs-down#down{data: { vote: -1}}
+  - if current_user
+    - if @voted_already != true
+      .thumbs
+        %i.glyphicon.glyphicon-thumbs-up#up{data: { vote: 1}}
+        %i.glyphicon.glyphicon-thumbs-down#down{data: { vote: -1}}
 %br
 .socialbutton2
   %a.twitter-share-button{"data-count" => "none", :href => "https://twitter.com/share"} Tweet
@@ -32,15 +34,19 @@
     %b Added On:
     = @photo.created_at.strftime("%a %d %B %Y")
   %p
-    %b Albums:
-    - @photo.albums.each do |album|
-      = album.name
+    - if @photo.albums != []
+      %b Albums:
+      - @photo.albums.each do |album|
+        = album.name
   %p
     %b Location:
     = @photo.location
   %p
-    %b Category:
-    = @photo.category.name
+    - if @photo.categories != []
+      %b Tagged As:
+      - @photo.categories.each do |tag|
+        = tag.name
+        %br
 
 
 .commentarea

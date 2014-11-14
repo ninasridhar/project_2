@@ -22,7 +22,6 @@ ajaxComments.getComments = function(event){
 ajaxComments.postComment = function(event){
   event.preventDefault();
   var words = $('textarea#comment').val();
-  console.log(user)
   $.ajax({
     url: '/comments',
     method: 'POST',

@@ -26,65 +26,65 @@ u14 = User.create!(email: 'barack.obama@whitehouse.co.gov', password: '12345678'
 
 u15 = User.create!(email: 'geraude.mathe@gmail.com', password: '12345678', name: 'Géraude Mathe', username: 'gerry', bio: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', hometown: 'Paris')
 
-p1 = Photo.create(name: 'London', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/food.jpg')), user_id: 1, location: 'London', category_id: 1)
+p1 = Photo.create(name: 'London', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/food.jpg')), user_id: 1, location: 'London')
 
-p2 = Photo.create(name: 'Flower IV', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/5nu8db.jpg')), user_id: 2, location: 'Berlin', category_id: 2)
+p2 = Photo.create(name: 'Flower IV', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/5nu8db.jpg')), user_id: 2, location: 'Berlin')
 
-p3 = Photo.create(name: 'San Francisco', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/Chrysanthemum.jpeg')), user_id: 3, location: 'Mumbai', category_id: 3)
+p3 = Photo.create(name: 'San Francisco', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/Chrysanthemum.jpeg')), user_id: 3, location: 'Mumbai')
 
-p4 = Photo.create(name: 'Automn Tree', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/cool-architecture-design-9675-hd-wallpapers.jpg')), user_id: 4, location: 'Paris', category_id: 4)
+p4 = Photo.create(name: 'Automn Tree', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/cool-architecture-design-9675-hd-wallpapers.jpg')), user_id: 4, location: 'Paris')
 
-p5 = Photo.create(name: 'Oscar the blue elephant', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/fairytail_falls.jpg')), user_id: 5, location: 'Moscow', category_id: 5)
+p5 = Photo.create(name: 'Oscar the blue elephant', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/fairytail_falls.jpg')), user_id: 5, location: 'Moscow')
 
-p6 = Photo.create(name: 'Art stuff', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/food-art-1-2gzoh3o.jpg')), user_id: 6, location: 'Barcelona', category_id: 1)
+p6 = Photo.create(name: 'Art stuff', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/food-art-1-2gzoh3o.jpg')), user_id: 6, location: 'Barcelona')
 
-p7 = Photo.create(name: 'Ocean', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/fotograf-hochzeit_hpv.jpg')), user_id: 7, location: 'Sydney', category_id: 2)
+p7 = Photo.create(name: 'Ocean', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/fotograf-hochzeit_hpv.jpg')), user_id: 7, location: 'Sydney')
 
-p8 = Photo.create(name: 'Deep Blue', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/golden_light_palouse.jpg')), user_id: 2, location: 'Hong Kong', category_id: 4)
+p8 = Photo.create(name: 'Deep Blue', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/golden_light_palouse.jpg')), user_id: 2, location: 'Hong Kong')
 
-p9 = Photo.create(name: 'Lamps', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lw.jpg')), user_id: 3, location: 'Manchester', category_id: 4)
+p9 = Photo.create(name: 'Lamps', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lw.jpg')), user_id: 3, location: 'Manchester')
 
-p10 = Photo.create(name: 'Facebook', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/media.facebook.efe5f8ef-9894-43d9-8521-dbc0bcc79313.normalized.jpg')), user_id: 5, location: 'Lisbon', category_id: 5)
+p10 = Photo.create(name: 'Facebook', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/media.facebook.efe5f8ef-9894-43d9-8521-dbc0bcc79313.normalized.jpg')), user_id: 5, location: 'Lisbon')
 
-p11 = Photo.create(name: 'Ladybird', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/natur.png')), user_id: 4, location: 'Cape Town', category_id: 3)
+p11 = Photo.create(name: 'Ladybird', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/natur.png')), user_id: 4, location: 'Cape Town')
 
-p12 = Photo.create(name: 'Big Apple', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/nyc-2.jpg')), user_id: 7, location: 'Dublin', category_id: 3)
+p12 = Photo.create(name: 'Big Apple', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/nyc-2.jpg')), user_id: 7, location: 'Dublin')
 
-p13 = Photo.create(name: 'Summer', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/titel-natur.jpg')), user_id: 2, location: 'Monaco', category_id: 3)
+p13 = Photo.create(name: 'Summer', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/titel-natur.jpg')), user_id: 2, location: 'Monaco')
 
-p14 = Photo.create(name: 'Rails', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/week-50-Form4-Architecture-2.jpg')), user_id: 5, location: 'Amsterdam', category_id: 3)
+p14 = Photo.create(name: 'Rails', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',  uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/week-50-Form4-Architecture-2.jpg')), user_id: 5, location: 'Amsterdam')
 
-p15 = Photo.create(name: 'House', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/ahouse.jpg')), user_id: 5, location: 'Los Angeles', category_id: 3)
+p15 = Photo.create(name: 'House', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/ahouse.jpg')), user_id: 5, location: 'Los Angeles')
 
-p16 = Photo.create(name: 'Pink', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/barbie.jpg')), user_id: 3, location: 'Houston', category_id: 5)
+p16 = Photo.create(name: 'Pink', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/barbie.jpg')), user_id: 3, location: 'Houston')
 
-p17 = Photo.create(name: 'Safari I', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/elephants.jpg')), user_id: 3, location: 'Durban', category_id: 4)
+p17 = Photo.create(name: 'Safari I', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/elephants.jpg')), user_id: 3, location: 'Durban')
 
-p18 = Photo.create(name: 'Fruit', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/fruit.jpg')), user_id: 1, location: 'Madrid', category_id: 2)
+p18 = Photo.create(name: 'Fruit', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/fruit.jpg')), user_id: 1, location: 'Madrid')
 
-p19 = Photo.create(name: 'London', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/food.jpg')), user_id: 1, location: 'London', category_id: 1)
+p19 = Photo.create(name: 'London', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/food.jpg')), user_id: 1, location: 'London')
 
-p20 = Photo.create(name: 'Girl', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/girl.jpg')), user_id: 1, location: 'Brasilia', category_id: 1)
+p20 = Photo.create(name: 'Girl', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/girl.jpg')), user_id: 1, location: 'Brasilia')
 
-p21 = Photo.create(name: 'Strange Guy', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/guy.jpg')), user_id: 3, location: 'Beijing', category_id: 4)
+p21 = Photo.create(name: 'Strange Guy', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/guy.jpg')), user_id: 3, location: 'Beijing')
 
-p22 = Photo.create(name: 'Lake', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lake.jpg')), user_id: 15, location: 'Montreal', category_id: 20)
+p22 = Photo.create(name: 'Lake', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lake.jpg')), user_id: 15, location: 'Montreal')
 
-p23 = Photo.create(name: 'Lions', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lionwithcub.jpg')), user_id: 15, location: 'Sao Paolo', category_id: 7)
+# p23 = Photo.create(name: 'Lions', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lionwithcub.jpg')), user_id: 15, location: 'Sao Paolo', category_id: 7)
 
-p24 = Photo.create(name: 'Green Mountain', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/mountain.jpg')), user_id: 8, location: 'Budapest', category_id: 19)
+p24 = Photo.create(name: 'Green Mountain', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/mountain.jpg')), user_id: 8, location: 'Budapest')
 
-p25 = Photo.create(name: 'Lake and Mountains', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/mountainlake.jpg')), user_id: 8, location: 'Honululu', category_id: 10)
+p25 = Photo.create(name: 'Lake and Mountains', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/mountainlake.jpg')), user_id: 8, location: 'Honululu')
 
-p26 = Photo.create(name: 'Piano', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/music.jpg')), user_id: 12, location: 'Tokyo', category_id: 12)
+p26 = Photo.create(name: 'Piano', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/music.jpg')), user_id: 12, location: 'Tokyo')
 
-p27 = Photo.create(name: 'Nasa I', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/nasa.jpg')), user_id: 3, location: 'Kennedy Space Center', category_id: 16)
+p27 = Photo.create(name: 'Nasa I', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/nasa.jpg')), user_id: 3, location: 'Kennedy Space Center')
 
-p28 = Photo.create(name: 'Pumpkinfield', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/pumpkin.jpg')), user_id: 14, location: 'Little Rock', category_id: 14)
+p28 = Photo.create(name: 'Pumpkinfield', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/pumpkin.jpg')), user_id: 14, location: 'Little Rock')
 
-p31 = Photo.create(name: 'Cats', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/sometypeofcats.jpg')), user_id: 15, location: 'Broadway', category_id: 8)
+# p31 = Photo.create(name: 'Cats', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/sometypeofcats.jpg')), user_id: 15, location: 'Broadway', category_id: 8)
 
-p32 = Photo.create(name: 'Tiger', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/tiger.jpg')), user_id: 7, location: 'Djibouti', category_id: 13)
+p32 = Photo.create(name: 'Tiger', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/tiger.jpg')), user_id: 7, location: 'Djibouti')
 
 
 v1 = Vote.create(photo_id: 1, number_of_votes: 0)
@@ -176,11 +176,11 @@ c19 = Category.create(name: 'TicTac')
 c20 = Category.create(name: 'MacBook')
 
 
-p1.albums  = [a1]
-p2.albums  = [a2]
+p1.albums  = [a1, a2, a3]
+p2.albums  = [a2, a4]
 p3.albums  = [a3]
 p4.albums  = [a4]
-p5.albums  = [a5]
+p5.albums  = [a1, a5]
 
 # p1.votes  = [v1]
 # p2.votes  = [v2]

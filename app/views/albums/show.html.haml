@@ -6,13 +6,14 @@
     - if @album.user_id == current_user.id
       = link_to 'Edit', edit_album_path(@album)
     %h3 by
-    = @album.user.name
+    %h3= @album.user.name
     %p 
       = @album.description
 
-  #albumsshowimages
+  #albumsshowimages.boxI
     - @album.photos.each do |photo|
-      = image_tag photo.uploaded_image.thumb, class: "boxIII"
+      = link_to photo do
+        = image_tag photo.uploaded_image.thumb, class: "boxIII"
 %br
 
 .albumshowcomment
