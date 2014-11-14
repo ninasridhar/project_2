@@ -4,6 +4,7 @@
 
 body{
 	margin: 0;
+	min-height: 
 }
 
 header{
@@ -268,6 +269,7 @@ ul h5.profile{
 	padding-left: 3%;
 	margin-left: -3%;
 	clear: both;
+	text-align: center;
 }
 
 /*ul h6{
@@ -441,15 +443,6 @@ p a:hover{
 	margin-left: -3%;
 }
 
-
-/*.albumsswitch{
->>>>>>> development
-	visibility: hidden
-}
-
-.imagesswitch{
-	visibility: visible;
-}*/
 
 .footer{
 	width: 100%;
@@ -694,4 +687,16 @@ p a:hover{
 .check{
 	width: 20%;
 	float: left;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	margin-top: 7%;
+	text-align: center;
+	padding: 0.6%;
+}
+
+.profileshowpage{
+	margin-top: 10%
 }

@@ -4,39 +4,40 @@
 / - if @subscription
 /   #subscription{data: {value: "#{@subscription}"}}
 
-= image_tag @user.user_image.thumb, :class => "userimage"
+.profileshowpage
+  = image_tag @user.user_image.thumb, :class => "userimage"
 
-.user_info
-  %p
-    %h1 
-      = @user.name
-      (
-      = @user.username
-      )
-  - if @user.id != current_user.id
-    .stars
-      - if @following == true    
-        %i.glyphicon.glyphicon-star#unfollow
-      - else 
-        %i.glyphicon.glyphicon-star#star
-  %p
-    - if @user.subscribers != []  
-      Subscribers:
-      - @user.subscribers.each do |sub|
-        %li= sub.username
-  %p
-    %b About Me:
-    = @user.bio
-  %p
-    %b Hometown:
-    = @user.hometown
-  %p
-    %b Member since:
-    = @user.created_at.strftime("%a %d %B %Y")
-  - if current_user.id == @user.id
-    %p= link_to 'Edit Profile', edit_user_registration_path
+  .user_info
+    %p
+      %h1 
+        = @user.name
+        (
+        = @user.username
+        )
+    - if @user.id != current_user.id
+      .stars
+        - if @following == true    
+          %i.glyphicon.glyphicon-star#unfollow
+        - else 
+          %i.glyphicon.glyphicon-star#star
+    %p
+      - if @user.subscribers != []  
+        Subscribers:
+        - @user.subscribers.each do |sub|
+          %li= sub.username
+    %p
+      %b About Me:
+      = @user.bio
+    %p
+      %b Hometown:
+      = @user.hometown
+    %p
+      %b Member since:
+      = @user.created_at.strftime("%a %d %B %Y")
+    - if current_user.id == @user.id
+      %p= link_to 'Edit Profile', edit_user_registration_path
 
-%ul.drawers
+%ul.drawers 
   %li
     %h5.profile
       Albums
