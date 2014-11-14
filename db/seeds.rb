@@ -24,8 +24,8 @@ u12 = User.create!(email: 'nina.sridhar.1@gmail.com', password: '12345678', name
 
 u14 = User.create!(email: 'barack.obama@whitehouse.co.gov', password: '12345678', name: 'Barack Obama', username: 'yes_we_can_3', bio: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', hometown: 'Munich')
 
-u15 = User.create!(email: 'geraude.mathe@gmail.com', password: '12345678', name: 'Géraude Mathe', username: 'gerry', bio: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', hometown: 'Paris')
-
+/u15 = User.create!(email: 'geraude.mathe@gmail.com', password: '12345678', name: 'Géraude Mathe', username: 'gerry', bio: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', hometown: 'Paris')
+/
 p1 = Photo.create(name: 'London', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/food.jpg')), user_id: 1, location: 'London', category_id: 1)
 
 p2 = Photo.create(name: 'Flower IV', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/5nu8db.jpg')), user_id: 2, location: 'Berlin', category_id: 2)
@@ -70,8 +70,8 @@ p21 = Photo.create(name: 'Strange Guy', description: 'Lorem ipsum dolor sit amet
 
 p22 = Photo.create(name: 'Lake', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lake.jpg')), user_id: 15, location: 'Montreal', category_id: 20)
 
-p23 = Photo.create(name: 'Lions', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lionwithcub.jpg')), user_id: 15, location: 'Sao Paolo', category_id: 7)
-
+/p23 = Photo.create(name: 'Lions', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lionwithcub.jpg')), user_id: 15, location: 'Sao Paolo', category_id: 7)
+/
 p24 = Photo.create(name: 'Green Mountain', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/mountain.jpg')), user_id: 8, location: 'Budapest', category_id: 19)
 
 p25 = Photo.create(name: 'Lake and Mountains', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/mountainlake.jpg')), user_id: 8, location: 'Honululu', category_id: 10)
