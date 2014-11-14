@@ -9,7 +9,8 @@
 			%p
 				-c.photos.each do |photo|
 					= link_to photo do
-						=image_tag photo.uploaded_image.thumb
+						=photo.title
+							=image_tag photo.uploaded_image.thumb
 
 
 
