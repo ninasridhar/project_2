@@ -20,9 +20,10 @@
     %br
     = f.text_field :location, :class => "text_field"
   .field
-    = f.label :category_id
-    %br
-    = f.collection_select(:category_id, Category.all, :id, :name)
+    = f.label :tag
+    - Category.all.each do |category|
+      = check_box_tag "photo[category_ids][]", category.id, @photo.category_ids.include?(category.id)
+      = category.name
   .field
     = f.label :album
     %br
