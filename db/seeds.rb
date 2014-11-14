@@ -68,7 +68,7 @@ p20 = Photo.create(name: 'Girl', description: 'Lorem ipsum dolor sit amet, conse
 
 p21 = Photo.create(name: 'Strange Guy', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/guy.jpg')), user_id: 3, location: 'Beijing')
 
-p22 = Photo.create(name: 'Lake', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lake.jpg')), user_id: 15, location: 'Montreal')
+p22 = Photo.create(name: 'Lake', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lake.jpg')), user_id: 14, location: 'Montreal')
 
 # p23 = Photo.create(name: 'Lions', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/lionwithcub.jpg')), user_id: 15, location: 'Sao Paolo', category_id: 7)
 
