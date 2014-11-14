@@ -1,13 +1,13 @@
 class Photo < ActiveRecord::Base
 
-  attr_accessible :album_id, :category_id, :description, :location_id, :name, :user_id, :album_ids, :location, :category_id, :photo_link, :uploaded_image, :votes
+  attr_accessible :album_id, :category_ids, :description, :location_id, :name, :user_id, :album_ids, :location, :category_id, :photo_link, :uploaded_image, :votes
 
 
   has_many :votes
   has_many :comments, as: :multi
   belongs_to :user
-  belongs_to :category
-  has_and_belongs_to_many :tags
+  # belongs_to :category
+  has_and_belongs_to_many :categories
   has_and_belongs_to_many :albums
 
   geocoded_by :location
