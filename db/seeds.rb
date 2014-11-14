@@ -87,6 +87,7 @@ p28 = Photo.create(name: 'Pumpkinfield', description: 'Lorem ipsum dolor sit ame
 p32 = Photo.create(name: 'Tiger', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam', photo_link: 'skldjvblajhvdoabdfjknllaskjdbfnofiebcjnlsncfjl', uploaded_image: File.open(File.join(Rails.root, '/app/assets/images/tiger.jpg')), user_id: 7, location: 'Djibouti')
 
 
+
 v1 = Vote.create(photo_id: 1, number_of_votes: 0)
 v2 = Vote.create(photo_id: 2, number_of_votes: 3)
 v3 = Vote.create(photo_id: 3, number_of_votes: -12)

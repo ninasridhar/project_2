@@ -308,7 +308,7 @@ ul li{
 	list-style: none
 }
 
-a:hover{
+nav a:hover{
 	color: red;
 }
 
@@ -441,6 +441,15 @@ p a:hover{
 	margin-left: -3%;
 }
 
+
+/*.albumsswitch{
+>>>>>>> development
+	visibility: hidden
+}
+
+.imagesswitch{
+	visibility: visible;
+}*/
 
 .footer{
 	width: 100%;
@@ -680,4 +689,9 @@ p a:hover{
 .formcentre img{
 	height: 50px;
 	width: 150px;
+}
+
+.check{
+	width: 20%;
+	float: left;
 }

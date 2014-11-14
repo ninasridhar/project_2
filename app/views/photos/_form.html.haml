@@ -21,9 +21,11 @@
     = f.text_field :location, :class => "text_field"
   .field
     = f.label :tag
+    %br
     - Category.all.each do |category|
-      = check_box_tag "photo[category_ids][]", category.id, @photo.category_ids.include?(category.id)
-      = category.name
+      .check
+        = check_box_tag "photo[category_ids][]", category.id, @photo.category_ids.include?(category.id)
+        = category.name
   .field
     = f.label :album
     %br
