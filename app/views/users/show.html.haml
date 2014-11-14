@@ -42,8 +42,12 @@
       Albums
     %p
       - current_user.albums.each do |album|
-        = link_to album do 
-          = image_tag album.photos.sample.uploaded_image.thumb 
+        - if album.photos.present?
+          = link_to album do 
+            = image_tag album.photos.sample.uploaded_image.thumb 
+        - else 
+          = link_to new_photo_path do
+            = image_tag "nopic.png" 
     %h5.profile
       Photos
     %p
