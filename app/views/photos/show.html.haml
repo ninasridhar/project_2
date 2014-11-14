@@ -43,9 +43,10 @@
     = @photo.location
   %p
     - if @photo.categories != []
-      %b Tags:
+      %b Tagged As:
       - @photo.categories.each do |tag|
         = tag.name
+        %br
 
 
 .commentarea
