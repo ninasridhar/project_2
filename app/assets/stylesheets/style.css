@@ -60,6 +60,7 @@ header h1:hover{
 
 article{
 	margin-top: 6%;
+	margin-bottom: 20%;
 }
 
 .search {
@@ -687,16 +688,4 @@ p a:hover{
 .check{
 	width: 20%;
 	float: left;
-}
-
-footer{
-	background-color: black;
-	color: white;
-	margin-top: 7%;
-	text-align: center;
-	padding: 0.6%;
-}
-
-.profileshowpage{
-	margin-top: 10%
 }

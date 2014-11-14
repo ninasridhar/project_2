@@ -10,11 +10,12 @@
     %p 
       = @album.description
 
-  #albumsshowimages.boxI
+  #albumsshowimages
     - @album.photos.each do |photo|
-      = link_to photo do
-        = image_tag photo.uploaded_image.thumb, class: "boxIII"
-%br
+      .boxI
+        = link_to photo do
+          = image_tag photo.uploaded_image.thumb
+  %br
 
 .albumshowcomment
   - if current_user
