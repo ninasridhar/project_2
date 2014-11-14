@@ -690,3 +690,8 @@ p a:hover{
 	height: 50px;
 	width: 150px;
 }
+
+.check{
+	width: 20%;
+	float: left;
+}
