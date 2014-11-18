@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:google_oauth2]
 
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :username, :bio, :hometown, :user_image, :subscriptions, :subscribers
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :username, :bio, :hometown, :user_image, :subscriptions, :subscriber, :subscribed_to
 
   # validates :password, presence: true, on: :create
   # validates :email, presence: :true, uniqueness: {case_sensitive: false}
@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
   has_many :photos
   has_many :votes
   has_many :subscriptions, foreign_key: :user1_id
-  has_many :subscribers, through: :subscriptions, source: :user2
+  has_many :subscribers, through: :subscriptions, source: :user2_id
   has_many :subscriptions, foreign_key: :user2_id
   has_many :subscribed_to, through: :subscriptions, source: :user1
   mount_uploader :user_image, AvatarImageUploader
@@ -24,12 +24,7 @@ class User < ActiveRecord::Base
   end
 
   def following(current_user)
-    self.subscribers.each do |sub|
-      if sub.id == current_user.id
-        @following = true
-      end
-    end
-    @following
+    current_user.subscribed_to_ids.uniq.include? self.id
   end
 
   def subscription(current_user)

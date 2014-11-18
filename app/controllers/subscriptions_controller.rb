@@ -41,6 +41,7 @@ class SubscriptionsController < ApplicationController
   # POST /tags.json
   def create
     @subscription = Subscription.new(params[:subscription])
+    @subscription.user2_id = current_user.id
     respond_to do |format|
       if @subscription.save
         format.html { redirect_to @subscription, notice: 'subscription was successfully created.' }

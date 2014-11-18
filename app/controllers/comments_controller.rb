@@ -3,14 +3,10 @@ class CommentsController < ApplicationController
   # GET /comments.json
   def index
     @comments = Comment.all
-    @results = []
-    @comments.each do |comment|
-      @results.push({user_name: User.find(comment.user_id).name, comments:comment.text, multi_id: comment.multi_id, multi_type: comment.multi_type})
-    end
-
+    
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @results }
+      format.json { render json: @comments, :include => :user }
     end
   end
 
