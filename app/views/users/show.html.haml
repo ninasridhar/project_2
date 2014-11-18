@@ -1,9 +1,6 @@
 -if current_user != nil
   #user{data: {value: "#{current_user.id}"}}
 
-/ - if @subscription
-/   #subscription{data: {value: "#{@subscription}"}}
-
 .profileshowpage
   = image_tag @user.user_image.thumb, :class => "userimage"
 

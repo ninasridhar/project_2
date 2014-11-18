@@ -6,7 +6,6 @@ class Photo < ActiveRecord::Base
   has_many :votes
   has_many :comments, as: :multi
   belongs_to :user
-  # belongs_to :category
   has_and_belongs_to_many :categories
   has_and_belongs_to_many :albums
 
@@ -20,7 +19,6 @@ class Photo < ActiveRecord::Base
   def votes_counter
     @votes = 0
     self.votes.each do |vote|
-      # vote.each do |v|
         @votes += vote.number_of_votes
     end 
     @votes  
@@ -34,5 +32,4 @@ class Photo < ActiveRecord::Base
     end
     @voted_already
   end
-
 end

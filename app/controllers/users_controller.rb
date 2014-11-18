@@ -9,11 +9,5 @@ class UsersController < ApplicationController
     if current_user != nil
       @following = @user.following(current_user)
     end
-
-    # if (@user.subscriptions != nil) || (@user.subscriptions != [])
-    #   @subscription = @user.subscription(current_user)
-    # end
-
   end
-
 end

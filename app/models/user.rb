@@ -1,13 +1,7 @@
 class User < ActiveRecord::Base
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:google_oauth2]
 
   attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :username, :bio, :hometown, :user_image, :subscriptions, :subscribers
-
-  # validates :password, presence: true, on: :create
-  # validates :email, presence: :true, uniqueness: {case_sensitive: false}
-  # validates :username, presence: :true, uniqueness: {case_sensitive: false}
 
   has_many :albums
   has_many :photos
@@ -52,8 +46,7 @@ class User < ActiveRecord::Base
         user.email = auth.info.email
         user.image = auth.info.image
         user.password = Devise.friendly_token[0,20]
-        # user.skip_confirmation! # don't require email confirmation
-        end
+      end
     end
   end
 end
