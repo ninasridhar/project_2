@@ -12,9 +12,9 @@
     %link{:href => "http://media.tumblr.com/tumblr_lytt98aMMJ1qfo540.jpg", :rel => "shortcut icon"}
   %body
     %header
-      %h1 Snap
+      =link_to root_path do
+        %h1 Snap
       =link_to image_tag('icon.png', :class => "icon"), root_path
-      /%button.buttonsmall
       -if current_user
         =link_to 'Locations', locations_path, :class => "nav"
         - if current_user.subscribed_to != []
@@ -47,7 +47,3 @@
     %br  
     %article
       = yield
-    / %footer
-    /   %h7
-    /     Nina Ife Jacob
-/%audio_tag.speak 'assets/images/snap.wav'

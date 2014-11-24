@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0108)file:///Users/iferunsewe/Desktop/general_assembly/wdi9/WDI_LDN_9_CLASSWORK/week_9/angular_project/index.html -->
+<html lang="en" ng-app="gasep2014yearbook" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-start{clip:rect(0,auto,auto,0);-ms-zoom:1.0001;}.ng-animate-active{clip:rect(-1px,auto,auto,0);-ms-zoom:1;}</style>
+  <meta charset="UTF-8">
+  <title>GA September 2014 Yearbook</title>
+  <link rel="stylesheet" href="file:///Users/iferunsewe/Desktop/general_assembly/wdi9/WDI_LDN_9_CLASSWORK/week_9/angular_project/style.css">
+  <script src="./GA September 2014 Yearbook_files/angular.min.js"></script>
+  <script src="./GA September 2014 Yearbook_files/app.js"></script>
+</head>
+<body>
+  <h1>GA September 2014 Yearbook</h1>
+
+  <div ng-controller="YearbookController" class="ng-scope">
+    <nav>
+      <ul>
+        <li ng-click="selectStudents(students)">
+          Students
+        </li>
+        <li>
+          Instructors
+        </li>
+        <li>
+          Description
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <h2>Web Development Immersive</h2>
+      <p>Build a work-ready skill set and fluency in full stack web development<br>Develop a portfolio of projects individually and in small teams that are ready to present to employers<br>
+      Prepare for an internship or entry-level job as a jr. web developer</p>
+    </section>
+    <section ng-show="selectStudents" class="">
+      <h2>Students</h2>
+      <!-- ngRepeat: student in students --><div class="people ng-scope" ng-repeat="student in students">
+        <div class="name ng-binding">
+          Ife
+        </div>
+      </div><!-- end ngRepeat: student in students --><div class="people ng-scope" ng-repeat="student in students">
+        <div class="name ng-binding">
+          Beth
+        </div>
+      </div><!-- end ngRepeat: student in students --><div class="people ng-scope" ng-repeat="student in students">
+        <div class="name ng-binding">
+          Nina
+        </div>
+      </div><!-- end ngRepeat: student in students --><div class="people ng-scope" ng-repeat="student in students">
+        <div class="name ng-binding">
+          Ben C
+        </div>
+      </div><!-- end ngRepeat: student in students --><div class="people ng-scope" ng-repeat="student in students">
+        <div class="name ng-binding">
+          Oli
+        </div>
+      </div><!-- end ngRepeat: student in students --><div class="people ng-scope" ng-repeat="student in students">
+        <div class="name ng-binding">
+          Dave
+        </div>
+      </div><!-- end ngRepeat: student in students --><div class="people ng-scope" ng-repeat="student in students">
+        <div class="name ng-binding">
+          George
+        </div>
+      </div><!-- end ngRepeat: student in students --><div class="people ng-scope" ng-repeat="student in students">
+        <div class="name ng-binding">
+          Dom
+        </div>
+      </div><!-- end ngRepeat: student in students --><div class="people ng-scope" ng-repeat="student in students">
+        <div class="name ng-binding">
+          Jody
+        </div>
+      </div><!-- end ngRepeat: student in students --><div class="people ng-scope" ng-repeat="student in students">
+        <div class="name ng-binding">
+          Jacob
+        </div>
+      </div><!-- end ngRepeat: student in students --><div class="people ng-scope" ng-repeat="student in students">
+        <div class="name ng-binding">
+          Ian
+        </div>
+      </div><!-- end ngRepeat: student in students --><div class="people ng-scope" ng-repeat="student in students">
+        <div class="name ng-binding">
+          Laura
+        </div>
+      </div><!-- end ngRepeat: student in students --><div class="people ng-scope" ng-repeat="student in students">
+        <div class="name ng-binding">
+          Lulu
+        </div>
+      </div><!-- end ngRepeat: student in students --><div class="people ng-scope" ng-repeat="student in students">
+        <div class="name ng-binding">
+          Ben S
+        </div>
+      </div><!-- end ngRepeat: student in students -->
+    </section>
+    <section>
+      <h2>Instructors</h2>
+      <!-- ngRepeat: instructor in instructors --><div class="peoplei ng-scope" ng-repeat="instructor in instructors">
+        <div class="namei ng-binding">
+          Gerry
+        </div>
+      </div><!-- end ngRepeat: instructor in instructors --><div class="peoplei ng-scope" ng-repeat="instructor in instructors">
+        <div class="namei ng-binding">
+          Mathilda
+        </div>
+      </div><!-- end ngRepeat: instructor in instructors --><div class="peoplei ng-scope" ng-repeat="instructor in instructors">
+        <div class="namei ng-binding">
+          Tobias
+        </div>
+      </div><!-- end ngRepeat: instructor in instructors --><div class="peoplei ng-scope" ng-repeat="instructor in instructors">
+        <div class="namei ng-binding">
+          Dave
+        </div>
+      </div><!-- end ngRepeat: instructor in instructors -->
+    </section>
+  </div>
+
+</body></html>
