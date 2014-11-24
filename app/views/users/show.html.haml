@@ -11,17 +11,12 @@
         (
         = @user.username
         )
-    - if @user.id != current_user.id
+    - if Subscription.where(user1_id: @user, user2_id: current_user) != []
+      - sub = Subscription.where(user1_id: @user, user2_id: current_user)
+      .stars{data:{id: sub[0].id}}}
+    - else 
       .stars
-        - if @following == true    
-          %i.glyphicon.glyphicon-star#unfollow
-        - else 
-          %i.glyphicon.glyphicon-star#star
-    %p
-      - if @user.subscribers != []  
-        Subscribers:
-        - @user.subscribers.each do |sub|
-          %li= sub.username
+            
     %p
       %b About Me:
       = @user.bio

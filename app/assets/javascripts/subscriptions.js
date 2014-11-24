@@ -1,28 +1,38 @@
 ajaxFollow = {}
 
-// ajaxFollow.getFollow = function(){
-//   $.ajax({
-//     url: '/users/' + user1,
-//     type: 'GET',
-//     dataType: "json"
-//   }).success(function(data){
-//     console.log(data);
-//     debugger;
-//   })
-// } 
+ajaxFollow.getFollow = function(){
+  var user1 = parseInt(window.location.href.split('/').pop());
+  var user2 = parseInt($('#user').data("value"));
+  $.ajax({
+    url: '/subscriptions',
+    type: 'GET',
+    dataType: "json"
+  }).success(function(data){
+    $.each(data, function(item){
+      if ((data[item].user1_id === user1)&&(data[item].user2_id === user2)){
+        // console.log(data);
+        $('.stars').html('');
+        $('.stars').append('<i class = "glyphicon glyphicon-star" id =  "unfollow" data-id = "'+ data[item].id +'"></i>')
+      } else{
+        $('.stars').html('');
+        $('.stars').append('<i class = "glyphicon glyphicon-star" id = "star" data-id = "'+ data[item].id +'"></i>');
+      
+      }
+    });
+  });
+} 
 
 ajaxFollow.Unfollow = function(){
   event.preventDefault();
-  var subId = $('#subscription').data("value");
-  console.log(subId);
+  var subId = $(this).data("id");
+  console.log(this);
   $.ajax({
       url: '/subscriptions/' + subId,
       type: 'DELETE',
       dataType: 'json'
     }).success(function(data){
-      console.log(data);
       $('.stars').html('');
-      $('.stars').append('<i class = "glyphicon glyphicon-star" id ="star"></i>')
+      $('.stars').append('<i class = "glyphicon glyphicon-star" id ="star"></i>');
     })
 }
 
@@ -37,8 +47,7 @@ ajaxFollow.Follow = function(){
     dataType: 'json'
   }).success(function(data){
     $('.stars').html('');
-    $('.stars').append('<i class = "glyphicon glyphicon-star" id =  "unfollow"></i>')
-    console.log(data);
+    $('.stars').append('<i class = "glyphicon glyphicon-star" id =  "unfollow" data-id = "'+ data.id +'"></i>');
   })
 }
 
@@ -46,4 +55,5 @@ ajaxFollow.Follow = function(){
 $(document).ready(function(){
   $(document).on('click', "#star", ajaxFollow.Follow)
   $(document).on('click', "#unfollow", ajaxFollow.Unfollow);
+  ajaxFollow.getFollow();
 })
