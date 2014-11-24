@@ -272,15 +272,6 @@ ul h5.profile{
 	text-align: center;
 }
 
-/*ul h6{
-	background: black;
-	color: white;
-	width: 103%;
-	float: left;
-	padding: 0.5%;
-	padding-left: 3%;
-	margin-left: -3%;
-}*/
 
 ul p { 
 	display:none;
@@ -687,4 +678,90 @@ p a:hover{
 .check{
 	width: 20%;
 	float: left;
+}
+
+.albumcomment{
+  margin: 30px auto;
+}
+
+tr{
+  height: 30px;
+}
+
+
+
+
+h6 { 
+   position: absolute; 
+   left: 0;
+   text-align: center;
+   width: 100%;
+}
+
+.hovername:hover{
+
+}
+
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: rgb(90, 163, 91);
+  width: 30%;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+#map_canvas {
+  width: 500px;
+  height: 400px;
+  // background-color: #7e7e7e;
+}
+.following{
+  color: gold;
 }
