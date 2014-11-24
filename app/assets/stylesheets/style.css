@@ -272,6 +272,15 @@ ul h5.profile{
 	text-align: center;
 }
 
+/*ul h6{
+	background: black;
+	color: white;
+	width: 103%;
+	float: left;
+	padding: 0.5%;
+	padding-left: 3%;
+	margin-left: -3%;
+}*/
 
 ul p { 
 	display:none;
@@ -651,7 +660,6 @@ p a:hover{
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
-
 }
 
 .hovername:hover{
@@ -687,21 +695,6 @@ p a:hover{
 tr{
   height: 30px;
 }
-
-
-
-
-h6 { 
-   position: absolute; 
-   left: 0;
-   text-align: center;
-   width: 100%;
-}
-
-.hovername:hover{
-
-}
-
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -760,8 +753,59 @@ div {
 #map_canvas {
   width: 500px;
   height: 400px;
-  // background-color: #7e7e7e;
 }
 .following{
   color: gold;
+}
+
+.maxwidth{
+  width: 100%;
+  clear: both;
+  padding-top: 40px;
+}
+
+.box2{
+  display: inline-block;
+  width: 250px;
+  padding: 0;
+  margin: 0;
+  float: none;
+}
+
+.glyphicon-star {
+    font-size: 2.2em;
+}
+#star:hover {
+    color: gold;
+}
+
+#unfollow {
+    color: gold;
+}
+
+.positive{
+  color: green;
+}
+
+.negative{
+  color: red;
+}
+
+.glyphicon{
+  width: 28px;  // 14px * 2
+  height: 28px; // 14px * 2
+  text-decoration: none;
+  color: black;
+}
+
+.glyphicon-thumbs-down:hover{
+  color: red;
+}
+
+.glyphicon-thumbs-up:hover{
+  color: green;
+}
+
+.input{
+  display:none;
 }
