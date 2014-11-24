@@ -9,6 +9,7 @@ gem 'pg'
 gem 'haml-rails'
 gem 'devise'
 gem 'geocoder'
+gem "fog", "~> 1.3.1"
 
 group :test do
   gem 'rspec-rails', "~> 2.14.2"
