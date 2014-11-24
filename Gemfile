@@ -33,6 +33,8 @@ gem 'cancancan', '~> 1.9'
 gem 'bourbon'
 gem 'simple_hashtag'
 gem 'omniauth-google-oauth2'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
 
 # Gems used only for assets and not required
 # in production environments by default.

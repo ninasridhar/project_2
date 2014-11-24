@@ -1,8 +1,13 @@
 .formcentre
   %h2 Log in
+  / = link_to (image_tag("Red-signin_Google_base_44dp.png")),
+  /   user_omniauth_authorize_path(:google_oauth2)
   = link_to (image_tag("Red-signin_Google_base_44dp.png")),
     user_omniauth_authorize_path(:google_oauth2)
-
+  = link_to (image_tag("twitter_login_button.png")), 
+    user_omniauth_authorize_path(:twitter)
+  = link_to (image_tag("login-with-facebook.png")), 
+    user_omniauth_authorize_path(:facebook)
   = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
     .field
       = f.label :email
@@ -18,4 +23,5 @@
         = f.label :remember_me
     .actions
       = f.submit "Log in"
+
 

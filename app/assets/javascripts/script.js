@@ -32,6 +32,11 @@ $(document).ready(function(){
     $(this).next().slideToggle();
     $(".drawers p").not($(this).next()).slideUp();
 	});
+
+    // $('.bxslider').bxSlider({
+    //     mode: 'fade',
+    //     captions: true
+    // });
 });
 
 
