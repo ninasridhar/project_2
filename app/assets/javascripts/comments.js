@@ -4,6 +4,7 @@ var itemId = parseInt(window.location.href.split('/').pop());
 var multitype = window.location.href.split('/')[3];
 
 ajaxComments.getComments = function(event){
+  
   $.ajax({
     url: '/comments',
     type: 'GET',
@@ -11,7 +12,6 @@ ajaxComments.getComments = function(event){
   }).success(function(data){
     $('.comment').html('');
     $.each(data, function(index, item){
-      console.log(item);
       if ((item.multi_type === multitype)&(item.multi_id === itemId)){
         $('.comment').append("<div><tr><td><b>"+ item.user.name +"<span class = 'delete' data-id = '"+ item.id +"'> X </span></b></td></tr><br><tr><td>"+ item.text +"</td></tr><div>")
       }

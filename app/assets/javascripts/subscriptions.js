@@ -8,14 +8,14 @@ ajaxFollow.getFollow = function(){
     type: 'GET',
     dataType: "json"
   }).success(function(data){
-    console.log(data);
     $.each(data, function(item){
-      if ((item.user1_id === user1)&(item.user2_id === user2)){
+      if ((data[item].user1_id === user1)&&(data[item].user2_id === user2)){
+        // console.log(data);
         $('.stars').html('');
-        $('.stars').append('<i class = "glyphicon glyphicon-star" id ="star"></i>')
+        $('.stars').append('<i class = "glyphicon glyphicon-star" id =  "unfollow" data-id = "'+ data[item].id +'"></i>')
       } else{
         $('.stars').html('');
-        $('.stars').append('<i class = "glyphicon glyphicon-star" id =  "unfollow" data-id = "'+ item.id +'"></i>');
+        $('.stars').append('<i class = "glyphicon glyphicon-star" id = "star" data-id = "'+ data[item].id +'"></i>');
       
       }
     });
@@ -31,9 +31,8 @@ ajaxFollow.Unfollow = function(){
       type: 'DELETE',
       dataType: 'json'
     }).success(function(data){
-      console.log(data);
       $('.stars').html('');
-      $('.stars').append('<i class = "glyphicon glyphicon-star" id ="star"></i>')
+      $('.stars').append('<i class = "glyphicon glyphicon-star" id ="star"></i>');
     })
 }
 
@@ -49,7 +48,6 @@ ajaxFollow.Follow = function(){
   }).success(function(data){
     $('.stars').html('');
     $('.stars').append('<i class = "glyphicon glyphicon-star" id =  "unfollow" data-id = "'+ data.id +'"></i>');
-    console.log(data);
   })
 }
 
