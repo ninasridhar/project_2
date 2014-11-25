@@ -8,6 +8,8 @@ ajaxFollow.getFollow = function(){
     type: 'GET',
     dataType: "json"
   }).success(function(data){
+    $('.stars').html('');
+      $('.stars').append('<i class = "glyphicon glyphicon-star" id = "star"></i>');
     $.each(data, function(item){
       if ((data[item].user1_id === user1)&&(data[item].user2_id === user2)){
         // console.log(data);

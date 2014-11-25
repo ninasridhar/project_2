@@ -1,3 +1,8 @@
+$('.bxslider').bxSlider({
+    mode: 'fade',
+    captions: true
+});
+
 $(document).ready(function(){
 
     $(".lupe").click(function () {
@@ -33,10 +38,7 @@ $(document).ready(function(){
     $(".drawers p").not($(this).next()).slideUp();
 	});
 
-    // $('.bxslider').bxSlider({
-    //     mode: 'fade',
-    //     captions: true
-    // });
+    $('.bxslider').bxSlider();
 });
 
 

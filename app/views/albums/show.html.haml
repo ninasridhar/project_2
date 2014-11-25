@@ -10,11 +10,11 @@
     %p 
       = @album.description
 
-  #albumsshowimages
+  %ul.bxslider
     - @album.photos.each do |photo|
-      .boxI
+      %li
         = link_to photo do
-          = image_tag photo.uploaded_image.thumb
+          = image_tag photo.uploaded_image
   %br
 
 .albumshowcomment
