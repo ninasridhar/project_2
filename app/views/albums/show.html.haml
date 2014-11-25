@@ -14,7 +14,7 @@
     - @album.photos.each do |photo|
       %li
         = link_to photo do
-          = image_tag photo.uploaded_image
+          = image_tag photo.uploaded_image.thumb
   %br
 
 .albumshowcomment
